@@ -1,0 +1,7 @@
+com\aimluck\eip\addressbookuser\util\AddressBookUserUtils.class
+com\aimluck\eip\modules\screens\AddressBookUserLiteJSONScreen.class
+com\aimluck\eip\addressbookuser\beans\AddressBookUserLiteBean.class
+com\aimluck\eip\modules\screens\AddressBookUserGroupLiteJSONScreen.class
+com\aimluck\eip\addressbookuser\beans\AddressBookUserEmailLiteBean.class
+com\aimluck\eip\addressbookuser\beans\AddressBookUserGroupLiteBean.class
+com\aimluck\eip\modules\screens\AddressBookUserEmailLiteJSONScreen.class

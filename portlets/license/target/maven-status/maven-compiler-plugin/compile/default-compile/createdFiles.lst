@@ -1,0 +1,7 @@
+com\aimluck\eip\license\util\LicenseUtils.class
+com\aimluck\eip\modules\actions\license\LicenseAction.class
+com\aimluck\eip\modules\screens\LicenseScreen.class
+com\aimluck\eip\modules\screens\LicenseFormJSONScreen.class
+com\aimluck\eip\modules\screens\LicenseFormScreen.class
+com\aimluck\eip\license\LicenseSelectData.class
+com\aimluck\eip\license\LicenseFormData.class

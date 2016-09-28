@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registry>
+    <skin-entry name="Jetspeed" hidden="false">
+        <property name="background-color" value="#FFFFFF" hidden="false"/>
+        <property name="highlight-background-color" value="#FFCC00" hidden="false"/>
+        <property name="portlet-skin-class" value="Jetspeed" hidden="false"/>
+        <property name="image.paths" value="Jetspeed" hidden="false"/>
+    </skin-entry>
+</registry>

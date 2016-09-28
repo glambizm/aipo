@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registry>
+    <portlet-entry name="Psml" hidden="false" type="ref" parent="Velocity" application="false">
+        <security-ref parent="admin-view"/>
+        <meta-info>
+            <title>アプリ初期配置管理</title>
+            <description>ポートレット配置を管理します。</description>
+        </meta-info>
+        <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
+        <parameter name="template" value="psml" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="action" value="psml.PsmlAction" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="_showtitlebar" value="false" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <media-type ref="html"/>
+        <url cachedOnURL="true"/>
+    </portlet-entry>
+</registry>

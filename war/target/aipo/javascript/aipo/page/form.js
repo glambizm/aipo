@@ -1,0 +1,1 @@
+dojo.provide("aipo.page");aipo.page.onLoadPageDialog=function(a){var b=dojo.byId("page_title");if(b){b.focus()}};aipo.page.onReceiveMessage=function(b){if(!b){var a=dijit.byId("modalDialog");if(a){a.hide()}location.href=location}if(dojo.byId("messageDiv")){dojo.byId("messageDiv").innerHTML=b}};

@@ -1,0 +1,48 @@
+#*
+ * Aipo is a groupware program developed by TOWN, Inc.
+ * Copyright (C) 2004-2015 TOWN, Inc.
+ * http://www.aipo.com
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *#
+## ---------------------------------------------------------------------------
+#if($!set) #set($portletsum = $!set.size()) #else #set($portletsum = 0) #end
+#set($tabs = [["$l10n.WAR_SET_UP_LAYOUT", "",""]])
+## ---------------------------------------------------------------------------
+#ALspacebothheader()
+
+#if($portletsum <= 0)
+<div class="message">$l10n.WAR_ADD_APPLICATION_BUTTON</div>
+#set($clink = $!utils.escapeXML("$!{jslink}/js_pane/$!{js_peid}?action=controls.Maximize&template=CustomizeFormScreen") )
+<div class="auiSummaryMeta clearfix center"><input class="auiButtonAction" type="button" value="アプリを追加する" onclick="aipo.common.showDialog('$clink')"></div>
+#else
+
+<h3>$l10n.WAR_ARRANGE_APP</h3>
+#set($clink = $!utils.escapeXML("$!{jslink}/js_pane/$!{js_peid}?action=controls.Maximize&template=CustomizeFormScreen") )
+<table class="tableWrapper">
+<tbody>
+$data.User.setTemp("customizer",$customizer)
+$!set.Controller.getContent($data)
+</tbody>
+</table>
+#end
+
+#ALspacebothfooter()
+
+<script type="text/javascript">
+//<![CDATA[
+    aipo.portletset.menuSelected = 0;
+//]]>
+</script>
+

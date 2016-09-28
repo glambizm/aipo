@@ -1,0 +1,9 @@
+com\aimluck\eip\whatsnew\beans\WhatsNewBean.class
+com\aimluck\eip\whatsnew\beans\WhatsNewParamsBean.class
+com\aimluck\eip\whatsnew\WhatsNewSelectData.class
+com\aimluck\eip\modules\screens\WhatsNewListScreen.class
+com\aimluck\eip\modules\actions\whatsnew\WhatsNewAction.class
+com\aimluck\eip\modules\screens\WhatsNewScreen.class
+com\aimluck\eip\whatsnew\WhatsNewContainer.class
+com\aimluck\eip\whatsnew\util\WhatsNewUtils.class
+com\aimluck\eip\whatsnew\WhatsNewResultData.class

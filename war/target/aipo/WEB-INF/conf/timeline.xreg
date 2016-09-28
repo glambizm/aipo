@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registry>
+    <portlet-entry name="Timeline" hidden="false" type="ref" parent="Velocity" application="false">
+        <security-ref parent="user-view"/>
+        <meta-info>
+            <title>タイムライン</title>
+            <description>チャット感覚で情報共有ができ、予定やToDoの追加・編集などが時系列に表示されることで社内の動きを把握してコミュニケーションできます。</description>
+        </meta-info>
+        <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
+        <parameter name="template" value="timeline" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="action" value="timeline.TimelineAction" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1a-rows" value="0" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
+            <meta-info>
+                <title>コンテンツの高さ（トップページ）</title>
+            </meta-info>
+        </parameter>
+        <parameter name="p1a-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1a-rows.style.items" value="0,250,500,750" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1a-rows.style.values" value="コンテンツの高さに合わせる,250px,500px,750px" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p2a-rows" value="0" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
+            <meta-info>
+                <title>コンテンツの高さ</title>
+            </meta-info>
+        </parameter>
+        <parameter name="p2a-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p2a-rows.style.items" value="0,250,500,750" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p2a-rows.style.values" value="コンテンツの高さに合わせる,250px,500px,750px" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p3a-group" value="" type="style" hidden="true" cachedOnName="true" cachedOnValue="true">
+            <meta-info>
+                <title>初期選択グループ</title>
+            </meta-info>
+        </parameter>
+        <parameter name="p3a-group.style" value="TimelineGroupBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p3a-group.style.initialvalue" value="すべてのグループ" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p4a-group" value="" type="style" hidden="true" cachedOnName="true" cachedOnValue="true">
+            <meta-info>
+                <title>初期選択種別</title>
+            </meta-info>
+        </parameter>
+        <parameter name="p4a-group.style" value="TimelineClassificationBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p4a-group.style.initialvalue" value="すべて" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p4a-group.style.items" value="all,posting,update" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p4a-group.style.values" value="すべて,投稿のみ,更新情報のみ" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <media-type ref="html"/>
+        <url cachedOnURL="true"/>
+    </portlet-entry>
+</registry>

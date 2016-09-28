@@ -1,0 +1,66 @@
+#*
+ * Aipo is a groupware program developed by TOWN, Inc.
+ * Copyright (C) 2004-2015 TOWN, Inc.
+ * http://www.aipo.com
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *#
+## ---------------------------------------------------------------------------
+<!-- MAIN TAB -->
+#set($beforeselected =false)
+#foreach ( $c in $css )
+<link rel="stylesheet" type="text/css" href="${external_resources_url}/css/$c.Path" media="$c.Media" />
+#end
+#if (!$tabs )
+#parse ("jetspeed.vm")
+#else
+#if($!showTab == "false")
+$portlet.getContent($data)
+#else
+#parse("/controls/html/jetspeed-header.vm")
+#if($activeurlselected)
+<input id="data-activecustomizeurl" type="hidden" value="$activeurlselected" />
+#else
+<input id="data-activecustomizeurl" type="hidden" value="$!utils.escapeXML("$!{jslink}/js_pane/?template=CustomizeFormErrorScreen")" />
+#end
+<!-- /MAIN TAB -->
+<!-- MAIN OUTER -->
+#if (${client} != "IPAD" || ${clientVer} != "4")
+<div class="roundMainWrapper">
+#else
+<div class="roundMainWrapper" style="min-height:1000px">
+#end
+<noscript><div class="alert">$utils.getl10nFormat1("WAR_CANNOT_USE_JAVASCRIPT",$!{alias})</div></noscript>
+#if("$!data.User.getUserName()" != "admin")
+#AUINotificationCheck()
+#end
+#ALMaintenance()
+#AuiInformation($information_title $information_text $information_cookie_name $information_display)
+#if(!$run)
+$portlet.getContent($data)
+#elseif($runs.size()==0)
+#AUIrowTableWide()
+<tr><td colspan="4" class="auiNoData">
+<p class="mh10">
+<a title="$l10n.WAR_ADD_APPLICATION" href="javascript:void(0)" onclick="aipo.common.showDialog('$activeurlselected')" class="auiButtonAction">$l10n.WAR_ADD_APPLICATION</a>
+</p>
+</td></tr>
+#AUItablefooter()
+#else
+$portlet.getContent($data)
+#end
+</div>
+<!-- MAIN OUTER -->
+#end
+#end

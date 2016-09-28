@@ -1,0 +1,1 @@
+dojo.provide("aipo.cellular");aipo.cellular.displayIndicator=function(a,b){var c=dojo.byId(a+b);if(c){dojo.style(c,"display","")}};

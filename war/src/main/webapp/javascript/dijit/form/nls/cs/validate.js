@@ -1,0 +1,1 @@
+({"rangeMessage": "* Tato hodnota je mimo rozsah.", "invalidMessage": "* Zadan叩 hodnota nen鱈 platn叩.", "missingMessage": "* Tato hodnota je vy転adov叩na."})

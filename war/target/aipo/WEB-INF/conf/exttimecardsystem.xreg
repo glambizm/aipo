@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registry>
+    <portlet-entry name="ExtTimecardSystem" hidden="false" type="ref" parent="Velocity" application="false">
+        <security-ref parent="admin-view"/>
+        <meta-info>
+            <title>タイムカード管理</title>
+            <description>出勤、退勤はもちろん外出も1クリックで登録できます。ひと月ごとに自動で集計されるため計算の手間がかかりません。</description>
+        </meta-info>
+        <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
+        <parameter name="template" value="exttimecardsystem-list" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="action" value="exttimecard.ExtTimecardSystemAction" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="_showtitlebar" value="false" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1a-rows" value="10" type="style" hidden="false" cachedOnName="true" cachedOnValue="true"/>
+        <media-type ref="html"/>
+        <url cachedOnURL="true"/>
+    </portlet-entry>
+</registry>

@@ -1,0 +1,9 @@
+com\aimluck\eip\modules\screens\UserGroupLiteJSONScreen.class
+com\aimluck\eip\modules\screens\UserLiteJSONScreen.class
+com\aimluck\eip\modules\screens\UserPhotoLiteJSONScreen.class
+com\aimluck\eip\user\beans\UserGroupLiteBean.class
+com\aimluck\eip\user\beans\UserEmailLiteBean.class
+com\aimluck\eip\user\beans\UserPhotoLiteBean.class
+com\aimluck\eip\user\util\UserUtils.class
+com\aimluck\eip\user\beans\UserLiteBean.class
+com\aimluck\eip\modules\screens\UserEmailLiteJSONScreen.class

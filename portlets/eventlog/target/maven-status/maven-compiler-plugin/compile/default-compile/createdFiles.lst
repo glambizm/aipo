@@ -1,0 +1,10 @@
+com\aimluck\eip\eventlog\util\EventlogUtils.class
+com\aimluck\eip\modules\screens\EventlogDetailScreen.class
+com\aimluck\eip\eventlog\EventlogMultiDelete.class
+com\aimluck\eip\modules\screens\EventlogCsvExportScreen.class
+com\aimluck\eip\modules\screens\EventlogScreen.class
+com\aimluck\eip\modules\actions\eventlog\EventlogAction.class
+com\aimluck\eip\eventlog\EventlogFormData.class
+com\aimluck\eip\eventlog\EventlogSelectData.class
+com\aimluck\eip\modules\screens\EventlogFormJSONScreen.class
+com\aimluck\eip\eventlog\EventlogResultData.class

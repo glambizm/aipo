@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registry>
+    <portlet-entry name="Cellular" hidden="false" type="ref" parent="Velocity" application="false">
+        <security-ref parent="owner-view"/>
+        <meta-info>
+            <title>携帯電話設定</title>
+            <description>携帯電話の設定を管理します。</description>
+        </meta-info>
+        <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
+        <parameter name="template" value="cellular" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="action" value="cellular.CellularAction" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="_showtitlebar" value="false" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <media-type ref="html"/>
+        <url cachedOnURL="true"/>
+    </portlet-entry>
+</registry>

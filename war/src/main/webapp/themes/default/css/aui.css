@@ -1,0 +1,5915 @@
+/*
+ * Aipo is a groupware program developed by TOWN, Inc.
+ * Copyright (C) 2004-2015 TOWN, Inc.
+ * http://www.aipo.com
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+@charset "UTF-8";
+.clearfix, #auiHeader, .hdPages > ul, .hdNavigation > ul, .dropdown .title,
+.activityPopup .title, .supportPopup .title, .dropdown .body,
+.activityPopup .body, .supportPopup .body, .dropdown .contents,
+.activityPopup .contents, .supportPopup .contents, .dropdown .foot,
+.activityPopup .foot, .supportPopup .foot, .profilePopup .contents, .messageSummary li a, .messageUserlist ul li a, #auiLauncher, #auiLauncher ul.launcher li a,
+#auiLauncher ul.setting li a, .auiTabs .tab, #timelineOuter .message,
+.timelineOuter .message {
+  *zoom: 1;
+}
+.clearfix:before, #auiHeader:before, .hdPages > ul:before, .hdNavigation > ul:before, .dropdown .title:before,
+.activityPopup .title:before, .supportPopup .title:before, .dropdown .body:before,
+.activityPopup .body:before, .supportPopup .body:before, .dropdown .contents:before,
+.activityPopup .contents:before, .supportPopup .contents:before, .dropdown .foot:before,
+.activityPopup .foot:before, .profilePopup .contents:before, .supportPopup .foot:before, .messageSummary li a:before, .messageUserlist ul li a:before, #auiLauncher:before, #auiLauncher ul.launcher li a:before,
+#auiLauncher ul.setting li a:before, .auiTabs .tab:before, #timelineOuter .message:before,
+.timelineOuter .message:before, .clearfix:after, #auiHeader:after, .hdPages > ul:after, .hdNavigation > ul:after, .dropdown .title:after,
+.activityPopup .title:after, .supportPopup .title:after, .dropdown .body:after,
+.activityPopup .body:after, .supportPopup .body:after, .dropdown .contents:after,
+.activityPopup .contents:after, .supportPopup .contents:after, .dropdown .foot:after,
+.activityPopup .foot:after, .profilePopup .contents:after, .supportPopup .foot:after, .messageSummary li a:after, .messageUserlist ul li a:after, #auiLauncher:after, #auiLauncher ul.launcher li a:after,
+#auiLauncher ul.setting li a:after, .auiTabs .tab:after, #timelineOuter .message:after,
+.timelineOuter .message:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after, #auiHeader:after, .hdPages > ul:after, .hdNavigation > ul:after, .dropdown .title:after,
+.activityPopup .title:after, .supportPopup .title:after, .dropdown .body:after,
+.activityPopup .body:after, .supportPopup .body:after, .dropdown .contents:after,
+.activityPopup .contents:after, .supportPopup .contents:after, .dropdown .foot:after,
+.activityPopup .foot:after, .profilePopup .contents:after, .supportPopup .foot:after, .messageSummary li a:after, .messageUserlist ul li a:after, #auiLauncher:after, #auiLauncher ul.launcher li a:after,
+#auiLauncher ul.setting li a:after, .auiTabs .tab:after, #timelineOuter .message:after,
+.timelineOuter .message:after {
+  clear: both;
+}
+
+.inline-block {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+
+.border-box, #auiHeader, #auiHeader a, .hdSearch .dropdown_menu .date, .hdSearch .dropdown_list ul .date, .dropdown_list .hdSearch ul .date, .hdSearch .dropdown_menu .body, .hdSearch .dropdown_list ul .body, .dropdown_list .hdSearch ul .body, ul.hdCommunications .num, .dropdown,
+.activityPopup, .supportPopup, .dropdown .title,
+.activityPopup .title, .supportPopup .title, .profilePopup, #dd_message .subContents, .scroll, #auiLauncher ul.launcher li a,
+#auiLauncher ul.setting li a, .auiTabs .tab > li a {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.bRadius2, #auiLauncher ul.launcher li .name,
+#auiLauncher ul.setting li .name, .counter {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.bRadius3, .search, .hdSearch form, ul.hdCommunications .num, .dropdown,
+.activityPopup, .supportPopup, .profilePopup, .profilePopup .messageInputDummy span, .profilePopup .messageField .outer,.auiSearchOption, .auiAvatarList li a img, textarea,
+select, input[type=text],
+input[type=password], #timelineOuter #inputField,
+#timelineOuter .inputField,
+#timelineOuter .outer,
+.timelineOuter #inputField,
+.timelineOuter .inputField,
+.timelineOuter .outer, .timeline .commentInputDummy span, .name .avatar, #timelineOuter .searchClearOuter, #timelineOuter .newMessage,
+.timelineOuter .newMessage, .timelineOuter .searchClearOuter, .timeline .readMore, .filterTip, .auiAbsLayer {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.bRadius4, .auiPopup,
+.activityPopup, .loginAlert,
+.alert, .alertSuccess, .alertRecommend, .alertInfo, .submenu_v2 li a, .filterInputField, #auiLauncher_1 li a, #auiLauncher_2 li a {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.bRadius50p {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.ellipsis, .hdPages a.name, .hdSearch .dropdown_menu .date, .hdSearch .dropdown_list ul .date, .dropdown_list .hdSearch ul .date, ul.hdTools .name, .messageSummary .date, .messageSummary .name, .messageSummary .latest, .messageUserlist .name, #auiLauncher ul.launcher li a,
+#auiLauncher ul.setting li a, .auiTabs .tab > li a {
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
+.transition01 {
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.transition02 {
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.popupShadow, .dropdown,
+.activityPopup, .supportPopup, .profilePopup {
+  -webkit-box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("fontawesome-webfont.eot");
+  src: url("fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("fontawesome-webfont.woff") format("woff"), url("fontawesome-webfont.ttf") format("truetype"), url("fontawesome-webfont.svg#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: Arial, Helvetica, "lucida grande", tahoma, verdana, arial, "hiragino kaku gothic pro", meiryo, "ms pgothic", sans-serif;
+}
+
+:lang(ja).dj_ie textarea {
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 1.38;
+  background-color: #f0f0f0;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+body#login {
+  position: relative;
+  background: #eeeeee url(../images/body.png) left top repeat-x;
+}
+
+p {
+  margin: 5px 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+  outline: none;
+}
+
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, textarea, p, th, td {
+  line-height: 1.38;
+}
+
+input[type=submit], input[type=button], input[type=reset] {
+  outline: none;
+}
+
+/***************************************************
+	auiHeader
+--------------------------------------------------*/
+#auiHeader {
+  position: fixed;
+  width: 100%;
+  min-width: 960px;
+  padding: 0 0 0 10px;
+  background-color: white;
+  border-bottom: solid 1px #d2d2d2;
+  z-index: 110;
+}
+#auiHeader ul li {
+  padding: 0;
+  background-image: none;
+}
+
+.hdLogo {
+  float: left;
+}
+.hdLogo a {
+  display: inline-block;
+  padding: 15px 10px;
+}
+
+.hdPages {
+  float: left;
+  padding-left: 20px;
+}
+.hdPages > ul > li {
+  position: relative;
+  display: block;
+  float: left;
+}
+.hdPages > ul > li > a {
+  display: block;
+  float: left;
+  line-height: 60px;
+  padding: 0 30px 0 15px;
+  color: #d2d2d2;
+  text-decoration: none;
+}
+.hdPages > ul > li > a [class*=icon-] {
+  color: #d2d2d2;
+}
+.hdPages > ul > li > a:hover {
+  color: #333333;
+  text-decoration: none;
+}
+.hdPages > ul > li > a:hover [class*=icon-] {
+  color: #333333;
+}
+.hdPages > ul > li [class^="icon-"], .hdPages > ul > li [class*=" icon-"] {
+  line-height: 60px;
+}
+.hdPages > ul > li:hover a.setting {
+  display: block;
+}
+.hdPages a.name {
+  max-width: 12em;
+}
+.hdPages a.setting {
+  position: absolute;
+  right: 0;
+  width: 25px;
+  padding: 0;
+}
+.hdPages a.setting.active [class*=icon-] {
+  color: #333333;
+}
+.hdPages a.plus {
+  padding: 0 15px;
+}
+.hdPages a.plus [class*=icon-] {
+  color: #d2d2d2;
+}
+.hdPages .current {
+  position: relative;
+}
+.hdPages .current:after {
+  position: absolute;
+  display: block;
+  content: "";
+  bottom: -1px;
+  width: 100%;
+  height: 1px;
+  background-color: #333333;
+}
+.hdPages .current a {
+  color: #333333;
+}
+
+.hdNavigation {
+  position: absolute;
+  right: 10px;
+  background: white;
+}
+.hdNavigation > ul {
+  float: left;
+}
+.hdNavigation > ul > li {
+  display: block;
+  float: left;
+  list-style: none;
+  line-height: 60px;
+}
+.hdNavigation > ul > li > a {
+  position: relative;
+  display: block !important;
+  height: 60px;
+  padding: 0 10px;
+  min-width: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: #999999;
+  border-top: solid 1px transparent;
+  border-right: solid 1px transparent;
+  border-left: solid 1px transparent;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  -ms-border-radius: 3px 3px 0 0;
+  -o-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+}
+.hdNavigation > ul > li > a [class^="icon-"], .hdNavigation > ul > li > a [class*=" icon-"] {
+  line-height: 60px;
+  vertical-align: middle;
+  font-size: 18px;
+  color: #d2d2d2;
+}
+.hdNavigation > ul > li > a [class*="sprite-"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.hdNavigation > ul > li > a:hover {
+  text-decoration: none;
+}
+.hdNavigation > ul > li > a:hover [class^="icon-"], .hdNavigation > ul > li > a:hover [class*=" icon-"] {
+  color: #333333;
+}
+.hdNavigation > ul > li > a.active {
+  position: relative;
+  border-top: solid 1px silver;
+  border-right: solid 1px silver;
+  border-left: solid 1px silver;
+  background-color: white;
+}
+.hdNavigation > ul > li > a.active [class^="icon-"], .hdNavigation > ul > li > a.active [class*=" icon-"] {
+  color: #333333;
+}
+.hdNavigation > ul > li > a.active:before {
+  position: absolute;
+  bottom: -1px;
+  right: 0;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  z-index: 121;
+}
+
+.search {
+  position: relative;
+  border: solid 1px #d2d2d2;
+  background-color: white;
+}
+.search:hover {
+  border: solid 1px #999999;
+}
+.search input[type=text], .search .submit {
+  height: 30px;
+  border: none;
+  vertical-align: middle;
+  outline: none;
+}
+.search input[type=text] {
+  width: 100%;
+  padding: 0 30px 0 3px;
+}
+.search input[type=text]:hover, .search input[type=text]:focus {
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.search .submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0 !important;
+  background: none;
+  filter: none;
+  cursor: pointer;
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.search button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+.search .submit [class^="icon-"], .search .submit [class*=" icon-"] {
+  display: block;
+  width: 30px;
+  color: #999999;
+}
+.search .submit:hover [class^="icon-"], .search .submit:hover [class*=" icon-"] {
+  color: #333333;
+}
+.search .placeholder {
+  top: 7px !important;
+  line-height: 1.6;
+}
+
+.hdSearch {
+  position: relative;
+  float: left;
+  margin: 10px;
+}
+.hdSearch form {
+  border: solid 1px #d2d2d2;
+  background-color: white;
+}
+.hdSearch form:hover {
+  border: solid 1px #999999;
+}
+.hdSearch input[type=text], .hdSearch .submit {
+  height: 20px;
+  border: none;
+  vertical-align: middle;
+  outline: none;
+}
+.hdSearch input[type=text] {
+  width: 160px;
+  margin: 0 3px;
+}
+.hdSearch input[type=text]:hover, .hdSearch input[type=text]:focus {
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.hdSearch .submit {
+  height: 38px;
+  margin: 0;
+  padding: 0;
+  background: none;
+  filter: none;
+  cursor: pointer;
+  border-left: solid 1px #ededed;
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.hdSearch .submit [class^="icon-"], .hdSearch .submit [class*=" icon-"] {
+  display: block;
+  width: 30px;
+  color: #999999;
+}
+.hdSearch .submit:hover {
+  background-color: #f6f6f6;
+}
+.hdSearch .submit:hover [class^="icon-"], .hdSearch .submit:hover [class*=" icon-"] {
+  color: #333333;
+}
+.hdSearch .dropdown_menu a, .hdSearch .dropdown_list ul a, .dropdown_list .hdSearch ul a {
+  line-height: 1.5;
+}
+.hdSearch .dropdown_menu .date, .hdSearch .dropdown_list ul .date, .dropdown_list .hdSearch ul .date, .hdSearch .dropdown_menu .body, .hdSearch .dropdown_list ul .body, .dropdown_list .hdSearch ul .body {
+  width: 100%;
+}
+.hdSearch .dropdown_menu .date, .hdSearch .dropdown_list ul .date, .dropdown_list .hdSearch ul .date {
+  color: #999999;
+}
+.hdSearch #preSearch {
+  width: 100%;
+}
+.hdSearch #preSearch li {
+  border-top: solid 1px #ededed;
+}
+.hdSearch .placeholder {
+  top: 7px !important;
+  line-height: 1.6;
+}
+
+.searchCategory {
+  display: inline-block;
+  float: left;
+  width: 60px;
+  border-right: solid 1px #ededed;
+  color: #999999;
+  cursor: pointer;
+  overflow: hidden;
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  -ms-border-radius: 3px 0 0 3px;
+  -o-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+}
+.searchCategory .name {
+  line-height: 38px;
+  text-align: center;
+}
+.searchCategory [class^="icon-"], .searchCategory [class*=" icon-"] {
+  margin-left: 5px;
+}
+.searchCategory:hover, .searchCategory .active {
+  color: #333333;
+  background-color: #f6f6f6;
+}
+.searchCategory:hover [class^="icon-"], .searchCategory:hover [class*=" icon-"], .searchCategory .active [class^="icon-"], .searchCategory .active [class*=" icon-"] {
+  color: #333333;
+}
+
+ul.hdCommunications {
+  padding: 5px 0;
+}
+ul.hdCommunications > li {
+  position: static;
+  padding: 0;
+  background-image: none;
+}
+ul.hdCommunications > li > a {
+  display: table-cell;
+  vertical-align: middle;
+  height: 50px;
+}
+ul.hdCommunications > li > a [class^="icon-"], ul.hdCommunications > li > a [class*=" icon-"] {
+  line-height: 50px;
+}
+ul.hdCommunications .num {
+  display: block;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: auto;
+  height: 13px;
+  min-width: 13px;
+  line-height: 13px;
+  padding: 0 3px;
+  font-size: 10px;
+  text-align: center;
+  background-color: #ff3333;
+  color: white;
+  white-space: nowrap;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+ul.hdCommunications .label {
+  text-wrap: nowrap;
+}
+
+[class^="sprite-"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/common/head_icons.png);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 2dppx) {
+  [class^="sprite-"] {
+    background-image: url(../images/common/head_icons_smp.png);
+    background-size: 60px;
+  }
+}
+
+.sprite-comment {
+  background-position: left top;
+}
+a:hover .sprite-comment, a.active .sprite-comment {
+  background-position: left bottom;
+}
+
+.sprite-notification {
+  background-position: center top;
+}
+a:hover .sprite-notification, a.active .sprite-notification {
+  background-position: center bottom;
+}
+
+.sprite-support {
+  background-position: right top;
+}
+a:hover .sprite-support, a.active .sprite-support {
+  background-position: right bottom;
+}
+
+.tweet textarea {
+  width: 100%;
+}
+
+ul.hdTools {
+  padding: 5px 0;
+}
+ul.hdTools > li {
+  position: relative;
+  min-width: 120px;
+  line-height: 50px;
+}
+ul.hdTools > li > a {
+  height: 50px;
+  text-decoration: none;
+  text-align: left;
+}
+ul.hdTools > li > a:hover, ul.hdTools > li > a:hover .name {
+  color: #333333;
+}
+ul.hdTools > li > a [class^="icon-"], ul.hdTools > li > a [class*=" icon-"] {
+  line-height: 50px;
+}
+ul.hdTools .name {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 10em;
+  margin: 0 5px;
+}
+ul.hdTools .dropdown {
+  min-width: 100%;
+  -webkit-border-radius: 0 0 3px 3px;
+  -moz-border-radius: 0 0 3px 3px;
+  -ms-border-radius: 0 0 3px 3px;
+  -o-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+}
+ul.hdTools .dropdown:before {
+  width: 100%;
+}
+
+.hdLauncher {
+  border-left: solid 1px #f0f0f0;
+}
+.hdLauncher a {
+  width: 60px;
+  margin-right: -10px;
+}
+.hdLauncher a.launcherActive [class^="icon-"], .hdLauncher a.launcherActive [class*=" icon-"] {
+  color: #333333;
+}
+
+/***************************************************
+	dropdown
+--------------------------------------------------*/
+.dropdown,
+.activityPopup, .supportPopup {
+  display: none;
+  position: absolute;
+  z-index: 120;
+  border: solid 1px #c0c0c0;
+  background-color: #ffffff;
+  line-height: 2;
+}
+.dropdown.open,
+.activityPopup.open, .supportPopup.open {
+  display: block;
+}
+.hdCommunications .dropdown, .hdTools .dropdown, .tools .dropdown, .hdCommunications
+.activityPopup, .hdTools
+.activityPopup, .tools
+.activityPopup, .hdCommunications .supportPopup, .hdTools .supportPopup, .tools .supportPopup {
+  right: 0;
+}
+.hdCommunications .dropdown, .hdCommunications
+.activityPopup, .hdCommunications .supportPopup {
+  width: 320px;
+}
+.dropdown .title,
+.activityPopup .title, .supportPopup .title {
+  height: 40px;
+  padding: 8px 10px;
+  line-height: 24px;
+  border-bottom: solid 1px #d2d2d2;
+}
+.dropdown .sideBlock,
+.activityPopup .sideBlock, .supportPopup .sideBlock {
+  float: left;
+  width: 280px;
+  /*width: 240px;*/
+}
+.dropdown .contents,
+.activityPopup .contents, .supportPopup .contents {
+  position: relative;
+  padding: 10px;
+}
+.dropdown h2,
+.activityPopup h2, .supportPopup h2 {
+  margin: 0 0 10px 0;
+  font-weight: normal;
+  line-height: 24px;
+}
+.dropdown h2:first-child,
+.activityPopup h2:first-child, .supportPopup h2:first-child {
+  border-top: none;
+}
+.dropdown .foot,
+.activityPopup .foot, .supportPopup .foot {
+  padding: 8px 10px;
+  border-top: solid 1px #d2d2d2;
+}
+.dropdown a, .dropdown input, .dropdown button,
+.activityPopup a,
+.activityPopup input,
+.activityPopup button, .supportPopup a, .supportPopup input, .supportPopup button {
+  filter: none !important;
+}
+
+.activityPopup, .supportPopup {
+  display: block;
+  padding: 0 !important;
+}
+.activityPopup.auiPopup h2, .supportPopup.auiPopup h2 {
+  padding: 0;
+  border: none;
+}
+
+.dropdown_menu li, .dropdown_list ul li {
+  padding: 0;
+  background-image: none;
+}
+.dropdown_menu a, .dropdown_list ul a {
+  display: block;
+  padding: 6px 10px;
+  color: #333333;
+  text-decoration: none;
+}
+#auiHeader .dropdown_menu a, #auiHeader .dropdown_list ul a, .dropdown_list #auiHeader ul a {
+  min-width: 118px;
+}
+.dropdown_menu a:hover, .dropdown_list ul a:hover {
+  text-decoration: none;
+  background-color: #f6f6f6;
+}
+.dropdown_menu .active a, .dropdown_list ul .active a {
+  background-color: #f6f6f6;
+}
+
+.dropdown_list {
+  position: relative;
+}
+.dropdown_list ul {
+  font-size: 11px;
+}
+.dropdown_list li {
+  padding: 0;
+  border-top: solid 1px #ededed;
+  background-image: none;
+}
+.dropdown_list li:first-child {
+  border-top: none;
+}
+.dropdown_list li > a {
+  position: relative;
+}
+.dropdown_list li > a > .avatar {
+  position: absolute;
+}
+.dropdown_list li > a > .avatar + .body {
+  padding-left: 30px;
+}
+.dropdown_list .name {
+  margin-bottom: 5px;
+}
+.dropdown_list .date {
+  float: right;
+  color: #999999;
+}
+.dropdown_list .new {
+  background-color: #f6f6f6;
+}
+.dropdown_list .new .date, .dropdown_list .new .name {
+  color: #333333;
+  font-weight: bold;
+}
+.dropdown_list .new:hover a {
+  background-color: #ededed;
+}
+
+.contentList li {
+  padding: 6px 10px !important;
+  line-height: 1.5;
+  border-top: solid 1px #ededed;
+}
+.contentList li:first-child {
+  border-top: none;
+}
+.contentList .date {
+  margin-bottom: 3px;
+  color: #999999;
+}
+
+.divider {
+  border-bottom: solid 1px #ededed;
+}
+
+.dividerBg {
+  background-color: #f6f6f6;
+}
+/***************************************************
+	profilePopup
+--------------------------------------------------*/
+.profilePopupWrap {
+  position: absolute;
+  z-index: 1000;
+}
+
+.profilePopup {
+  display: none;
+  position: absolute;
+  border: solid 1px #c0c0c0;
+  background-color: #ffffff;
+  line-height: 2;
+  min-width: 220px;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+.profilePopup .contents {
+  position: relative;
+  padding: 10px;
+}
+.profilePopup .avatar_l {
+  float: left;
+  margin-right: 10px;
+}
+.profilePopup .popupInner {
+  overflow: hidden;
+}
+.profilePopup .name {
+  display: block;
+  font-weight: bold;
+}
+.profilePopup .name_kana {
+  display: block;
+  font-size: 10px;
+  padding: 2px 0 5px;
+}
+.profilePopup .post_name {
+  display: block;
+}
+.profilePopup .icon_menu {
+  width: 320px;
+}
+.profilePopup .icon_menu li {
+  padding: 0;
+  background-image: none;
+  width: 159px;
+  float: left;
+  text-align: center;
+  font-size: 10px;
+  margin-left: -1px;
+  border-left: 1px solid #ededed;
+}
+.profilePopup .icon_menu li:first-child {
+  margin-left: 0px;
+  border-left: none;
+}
+.profilePopup .icon_menu li div {
+  padding-bottom: 3px;
+}
+.profilePopup .icon_menu li a {
+  display: block;
+  padding: 6px 10px;
+  color: #a0a0a0;
+  text-decoration: none;
+}
+.profilePopup .icon_menu li a i {
+  font-size: 20px;
+  color: #a0a0a0;
+}
+.profilePopup .icon_menu li a:hover {
+  color: #313131;
+  text-decoration: none;
+  background: none;
+}
+.profilePopup .icon_menu li a:hover i {
+  color: #313131;
+}
+.profilePopup .icon_menu.icon_menu_s {
+  width: 260px;
+}
+.profilePopup .icon_menu.icon_menu_s li {
+  width: 129px;
+}
+.profilePopup .messageInputDummy span {
+  display: block;
+  padding: 5px;
+  border: 1px #d2d2d2 solid;
+  color: #d2d2d2;
+  cursor: text;
+  background: #fff;
+}
+.profilePopup .messageField .outer {
+  border: 1px #d2d2d2 solid;
+  background: #fff;
+  overflow: hidden;
+}
+.profilePopup .messageField #inputField,
+.profilePopup .messageField .inputField {
+  margin-bottom: 15px;
+  background: transparent;
+}
+.profilePopup .messageField .outer {
+  padding: 3px;
+  margin: 0 0 5px 0;
+}
+.profilePopup .messageField textarea {
+  border: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  font-size: 13px;
+}
+.profilePopup .messageField textarea:focus {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.profilePopup .messageField textarea.elastic {
+  width: 99%;
+  overflow: hidden;
+  resize: none;
+  outline: 0;
+  line-height: normal;
+  height: 21px;
+  -webkit-appearance: caret;
+}
+/***************************************************
+	dd_message
+--------------------------------------------------*/
+#dd_message {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 3px;
+}
+#dd_message > .body {
+  /* background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAABCAYAAAAFILFrAAAAFUlEQVR42mMwNjb+P4pH8SgexbTAAPnyvlAL+gbgAAAAAElFTkSuQmCC);
+  background-repeat: repeat-y;
+  background-position: left; */
+  background: #eee;
+}
+#dd_message .title {
+  height: 50px;
+  line-height: 34px;
+  border-bottom: 1px solid #e5e5e5;
+}
+#dd_message .mainBlock {
+   margin-left: 280px;
+  /*border-left: solid 1px #d2d2d2; */
+  /*margin-left: 240px;*/
+}
+#dd_message .mainBlock > .contents {
+  /* padding: 10px 10px 0 10px; */
+  padding: 10px 15px 0 15px;
+}
+/* ------------------------------------------------
+   rightBlock  2015.05.11
+--------------------------------------------------- */
+#dd_message .rightBlock {
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  right: 0;
+  width: 359px;
+  background: #ffffff;
+  border-left: 1px solid #e5e5e5;
+  overflow-y: scroll;
+}
+#dd_message .rightBlock div.index {
+  background: #f6f6f6;
+  padding: 11px 20px 9px 10px;
+  color: #333;
+}
+#dd_message .rightBlock div.index a {
+  text-decoration: none !important;
+}
+#dd_message .rightBlock ul.close li {
+  display: none;
+}
+#dd_message .rightBlock ul.close li.index {
+  display: block;
+}
+#dd_message .rightBlock ul.user li, #dd_message .rightBlock ul.room li {
+  height: 38px;
+  border: 1px solid #E7E7E7;
+}
+#dd_message .rightBlock ul.user li:hover, #dd_message .rightBlock ul.room li:hover {
+  border: 1px solid #999;
+}
+#dd_message .rightBlock ul.user li a, #dd_message .rightBlock ul.room li a {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 38px;
+  padding: 7px 16px 7px 38px;
+  display: block;
+  text-decoration: none;
+}
+#dd_message .rightBlock ul.user li:hover span,
+#dd_message .rightBlock ul.room li:hover span {
+  text-decoration: none;
+}
+#dd_message .rightBlock ul.user li .name,
+#dd_message .rightBlock ul.room li .name,
+#dd_message .rightBlock ul.user li .date,
+#dd_message .rightBlock ul.room li .date {
+  line-height: 25px;
+  height: 25px;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+#dd_message .rightBlock ul.user li .date, #dd_message .rightBlock ul.room li .date {
+  float: right;
+  color: #999;
+  font-size: 11px;
+}
+#dd_message .rightBlock ul.user li .nrCount, #dd_message .rightBlock ul.room li .nrCount {
+  background-color: #ff3333;
+  border-radius: 3px;
+  color: #ffffff;
+  display: inline-block;
+  float: left;
+  font-size: 10px;
+  line-height: 1.4;
+  margin: 5px 3px 0 0;
+  min-width: 8px;
+  padding: 0 3px;
+  text-align: center;
+  text-decoration: none;
+}
+#dd_message .rightBlock ul li {
+  position: relative;
+  margin: 0 15px 7px 15px;
+  border-radius: 4px;
+  background: #ffffff;
+}
+#dd_message .rightBlock ul li.index {
+  background: none;
+  color: #333;
+  border: none;
+  padding: 0 15px 0;
+  margin: 15px 0 7px;
+  cursor: auto;
+  height: auto;
+  border: none;
+}
+#dd_message .rightBlock ul li.index a {
+  height: auto;
+  padding: 0;
+  margin-right: 4px;
+  text-decoration: none !important;
+}
+#dd_message .rightBlock ul li.index a i {
+  text-decoration: none;
+}
+#dd_message .rightBlock ul li.index:hover {
+  border: none;
+}
+#dd_message .rightBlock ul li.index span {
+  color: #999;
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 11px;
+}
+#dd_message .rightBlock ul li.index a i {
+  color: #d2d2d2;
+  text-decoration: none;
+}
+#dd_message .rightBlock ul li.index a:hover i {
+  color: #333;
+}
+#dd_message .rightBlock ul li span {
+  display: block;
+}
+#dd_message .rightBlock ul li .avatar {
+  left: 0;
+  padding: 7px;
+  position: absolute;
+  top: 0;
+}
+#dd_message .rightBlock ul li.message {
+  padding: 7px 16px 7px 38px;
+}
+#dd_message .rightBlock ul li.message .tlClipBoard {
+  border: 1px solid #f0f0f0;
+  font-size: 11px;
+  padding: 7px;
+  margin: 10px 0 5px;
+}
+#dd_message .rightBlock ul li.message .time {
+  color: #999;
+}
+#dd_message .rightBlock ul li.message .time a {
+  color: #999;
+}
+#dd_message .rightBlock ul li.message .time a:hover {
+  color: #ff9900;
+}
+/* ------------------------------------------------
+   rightBlock  END
+--------------------------------------------------- */
+#dd_message .timelineOuter .message {
+  border-top: none;
+  /* padding: 0 7px 7px; */
+  padding: 0 7px 20px;
+  margin-bottom: 0px;
+}
+#dd_message .timelineOuter .message:first-child {
+  padding-top: 0 !important;
+}
+#dd_message .timelineOuter .message:last-child {
+  margin-bottom: 30px;
+}
+#dd_message .timelineOuter .message.active {
+  background: #fef6f1;
+  border-radius: 4px;
+}
+#dd_message .timelineOuter .message .avatar {
+  margin-top: 7px;
+}
+#dd_message .timelineOuter .message .time {
+  color: #999;
+  margin-bottom: 0;
+}
+#dd_message .timelineOuter .message .time a {
+  color: #999;
+}
+#dd_message .timelineOuter .message .time a:hover {
+  color: #ff9900;
+}
+#dd_message .timelineOuter .message .name {
+  padding-top: 7px;
+}
+#dd_message .timelineOuter .timeline .messageContents {
+  margin-right: 60px;
+}
+#dd_message .contents {
+  background: #ffffff;
+}
+#dd_message .subContents {
+  float: right;
+  width: 240px;
+  border-left: solid 1px #d2d2d2;
+}
+#dd_message .inputField {
+  margin-bottom: 10px;
+}
+.counter {
+  float: left !important;
+  font-size: 10px;
+  height: 13px;
+  min-width: 11px;
+  line-height: 13px !important;
+  padding: 0 2px;
+  text-align: center;
+  margin-top: 5px;
+  margin-right: 2px;
+  color: #FFFFFF;
+  background: #ff3333 !important;
+  text-decoration: none;
+}
+
+.counter.zero {
+  background: #b5b5b5 !important;
+}
+
+.messageSummary li, .messageUserlist ul li {
+  position: relative;
+  padding: 0;
+  margin-left: 10px;
+  background-image: none;
+  /* border-bottom: solid 1px #000; */
+}
+.messageSummary li a, .messageUserlist ul li a {
+  display: block;
+  height: 38px;
+  /* height: 44px;
+  color: #999; */
+  text-decoration: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.messageSummary li a .name, .messageUserlist ul li a .name {
+  /* color: #ffffff; */
+}
+.messageSummary li a:hover, .messageUserlist ul li a:hover {
+  color: #ff9900;
+  /*background-color: #222; */
+  text-decoration: none;
+}
+.messageSummary li a:hover span, .messageUserlist ul li a:hover span {
+  text-decoration: none;
+}
+.messageSummary li a:hover .name, .messageUserlist ul li a:hover .name {
+  color: #ff9900;
+}
+.messageSummary li span, .messageUserlist ul li span {
+  display: block;
+}
+.messageSummary li .latest, .messageSummary li .date, .messageUserlist ul li .latest, .messageUserlist ul li .date {
+  font-size: 11px;
+  color: #999;
+}
+.messageSummary li .latest{
+  display: none;
+}
+.messageSummary .avatar, .messageUserlist ul .avatar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* padding: 6px; */
+  padding: 7px;
+}
+
+.messageSummary {
+  position: relative;
+}
+.messageSummary li a {
+  /* padding: 6px 10px 6px 45px; */
+  padding: 6px 16px 6px 40px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.messageSummary .date {
+  float: right;
+  white-space: nowrap;
+  margin-left: 5px;
+}
+.messageSummary .date, .messageSummary .name, .messageSummary .latest {
+  /* line-height: 16px;
+  height: 16px; */
+  line-height: 25px;
+  height: 25px;
+}
+.messageSummary .nrCount {
+  float: left;
+  display: inline-block;
+  height: 13px;
+  min-width: 10px;
+  line-height: 13px;
+  margin: 5px 3px 0 0;
+  padding: 0 2px;
+  font-size: 10px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ff3333;
+  color: #ffffff;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.messageSummary .active, .messageUserlist .active {
+}
+.messageSummary .active a, .messageSummary .active a:hover, .messageUserlist .active a, .messageUserlist .active a:hover {
+  /* color: #999 !important; */
+  background-color: #ffffff;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  border-left: 1px solid #e7e7e7;
+  border-radius: 3px 0 0 3px;
+}
+.messageSummary .active a .date, .messageSummary .active a .latest, .messageSummary .active a:hover .date, .messageSummary .active a:hover .latest, .messageUserlist .active a .date, .messageUserlist .active a .latest, .messageUserlist .active a:hover .date, .messageUserlist .active a:hover .latest {
+  /* color: #666 !important; */
+}
+.messageSummary .active a .name, .messageSummary .active a:hover .name, .messageUserlist .active a .name, .messageUserlist .active a:hover .name {
+  color: #000;
+}
+
+.messageUserlist ul li a {
+  /* line-height: 45px;
+  padding-left: 45px; */
+  line-height: 25px;
+  padding: 6px 16px 6px 40px;
+}
+.messageUserlist .index {
+  line-height: 20px;
+  padding: 0 8px;
+  margin: 7px 0;
+  border-bottom: 1px solid #DCDCDC;
+  /* background: #222222; */
+}
+
+.searchClear {
+  padding: 0 !important;
+  line-height: 40px;
+  text-align: center;
+  color: white !important;
+}
+.searchClear [class^="icon-"], .searchClear [class*=" icon-"] {
+  color: white;
+  margin-right: 5px;
+}
+.searchClear:hover {
+  color: #ff9900 !important;
+}
+.searchClear:hover [class^="icon-"], .searchClear:hover [class*=" icon-"] {
+  color: #ff9900;
+}
+
+.messageSummaryHead div {
+  /* border-bottom: solid 1px black; */
+}
+
+.roomHeader {
+  margin-bottom: 10px;
+}
+.roomHeader .userListIcon {
+  padding-right: 30px;
+  height: 24px;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+.roomHeader .floatLeft {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 90%;
+}
+.roomHeader .floatRight {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.roomHeader .floatRight a {
+  display: inline-block;
+}
+.roomHeader .floatRight a [class*=icon-] {
+  display: inline-block;
+  min-width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #d2d2d2;
+}
+.roomHeader .floatRight a:hover [class*=icon-] {
+  color: #333333;
+}
+
+#messageTimeline {
+  margin: 0 -10px;
+}
+#messageTimeline .message {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+#messageTimeline .message.invite {
+  background-color: #f6f6f6;
+}
+
+/* ------------------------------------------------
+ date_line  2015.05.11
+--------------------------------------------------- */
+.date_line {
+  position: relative;
+  text-align: center;
+  margin: -10px 0 20px;
+  height: 30px;
+  border-bottom: 1px solid #eee;
+}
+.date_line span {
+  position: absolute;
+  top: 13px;
+  left: 50%;
+  width: 180px;
+  margin-left: -90px;
+  display: inline-block;
+  padding: 5px 10px;
+  line-height: 30px;
+  background: #ffffff;
+  font-size: 16px;
+  text-align: center;
+}
+
+/***************************************************
+	sideBlock
+--------------------------------------------------*/
+.sideBlock {
+  position: relative;
+  /* background-color: #333333;
+  color: white; */
+}
+.sideBlock .inner {
+  /* padding: 10px; */
+  padding: 10px 15px;
+}
+.sideBlock .search {
+  background-color: #666666;
+  border-color: #666666;
+}
+.sideBlock .search input[type=text] {
+  background-color: #666666;
+  color: #ffffff;
+}
+.sideBlock .search button {
+  text-shadow: none;
+}
+.sideBlock .search label,
+.sideBlock .search [class*="icon-"] {
+  color: #d2d2d2;
+}
+.sideBlock .auiTabs .tab {
+  border-right: 1px solid #eee;
+}
+.sideBlock .auiTabs .tab li a, .sideBlock .auiTabs .tab li:first-child a {
+  margin: 0;
+  /* background-color: #000000; */
+  height: 35px;
+  line-height: 35px;
+  border: none;
+  /* color: #d2d2d2; */
+  border-radius: 0;
+}
+.sideBlock .auiTabs .tab li a:hover, .sideBlock .auiTabs .tab li:first-child a:hover {
+  /* color: white; */
+}
+.sideBlock .auiTabs .tab li.active a {
+  /* background-color: #333333;
+  color: white !important; */
+  background: #eee;
+}
+.sideBlock .auiTabs .tabContents li {
+  padding: 0 !important;
+}
+
+/***************************************************
+	scroll
+--------------------------------------------------*/
+.scroll {
+  overflow: auto;
+}
+
+/***************************************************
+	emptyMessage
+--------------------------------------------------*/
+.emptyMessage {
+  margin: auto;
+  text-align: center;
+  color: #999999;
+  margin: 120px 0 170px;
+}
+.emptyMessage [class*=icon-] {
+  font-size: 120px !important;
+  color: #d2d2d2;
+  text-shadow: 0 -1px 0 #b8b8b8;
+}
+.dropdown_list .emptyMessage, .tableWrapper .emptyMessage, .auiPopup .emptyMessage {
+  margin: 15px 0;
+}
+#dd_message .emptyMessage {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 160px;
+  margin: auto;
+}
+
+/***************************************************
+	row & col
+--------------------------------------------------*/
+.row, .col-2, .col-3 {
+  display: inline-block;
+}
+
+/***************************************************
+	auiButton
+--------------------------------------------------*/
+input[type=submit],
+input[type=button],
+input[type=reset],
+button,
+.auiButton,
+.auiButtonAction,
+.auiButtonBold,
+.auiButtonSearch,
+.auiButtonSmall,
+.auiButtonDisabled,
+.auiButtonIcon,
+.auiButtonDummy,
+.auiButtonIconDummy,
+.auiSelectButton a,
+.auiSelectButtonSmall a,
+.auiWidget .auiSelectButton a,
+.auiWidget .auiSelectButtonSmall a {
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  margin: 0;
+  padding: 0 8px;
+  color: #333333;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  background-color: #f6f6f6;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #f0f0f0));
+  background-image: -webkit-linear-gradient(top, #ffffff, #f0f0f0);
+  background-image: -moz-linear-gradient(top, #ffffff, #f0f0f0);
+  background-image: -o-linear-gradient(top, #ffffff, #f0f0f0);
+  background-image: linear-gradient(top, #ffffff, #f0f0f0);
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFFFFFF', endColorstr='#FFF0F0F0');
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  border: solid 1px #d2d2d2;
+  border-bottom-color: #b3b3b3;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active, input[type=submit].active,
+input[type=button]:hover,
+input[type=button]:focus,
+input[type=button]:active,
+input[type=button].active,
+input[type=reset]:hover,
+input[type=reset]:focus,
+input[type=reset]:active,
+input[type=reset].active,
+button:hover,
+button:focus,
+button:active,
+button.active,
+.auiButton:hover,
+.auiButton:focus,
+.auiButton:active,
+.auiButton.active,
+.auiButtonAction:hover,
+.auiButtonAction:focus,
+.auiButtonAction:active,
+.auiButtonAction.active,
+.auiButtonBold:hover,
+.auiButtonBold:focus,
+.auiButtonBold:active,
+.auiButtonBold.active,
+.auiButtonSearch:hover,
+.auiButtonSearch:focus,
+.auiButtonSearch:active,
+.auiButtonSearch.active,
+.auiButtonSmall:hover,
+.auiButtonSmall:focus,
+.auiButtonSmall:active,
+.auiButtonSmall.active,
+.auiButtonDisabled:hover,
+.auiButtonDisabled:focus,
+.auiButtonDisabled:active,
+.auiButtonDisabled.active,
+.auiButtonIcon:hover,
+.auiButtonIcon:focus,
+.auiButtonIcon:active,
+.auiButtonIcon.active,
+.auiButtonDummy:hover,
+.auiButtonDummy:focus,
+.auiButtonDummy:active,
+.auiButtonDummy.active,
+.auiButtonIconDummy:hover,
+.auiButtonIconDummy:focus,
+.auiButtonIconDummy:active,
+.auiButtonIconDummy.active,
+.auiSelectButton a:hover,
+.auiSelectButton a:focus,
+.auiSelectButton a:active,
+.auiSelectButton a.active,
+.auiSelectButtonSmall a:hover,
+.auiSelectButtonSmall a:focus,
+.auiSelectButtonSmall a:active,
+.auiSelectButtonSmall a.active,
+.auiWidget .auiSelectButton a:hover,
+.auiWidget .auiSelectButton a:focus,
+.auiWidget .auiSelectButton a:active,
+.auiWidget .auiSelectButton a.active,
+.auiWidget .auiSelectButtonSmall a:hover,
+.auiWidget .auiSelectButtonSmall a:focus,
+.auiWidget .auiSelectButtonSmall a:active,
+.auiWidget .auiSelectButtonSmall a.active {
+  border: solid 1px #999999;
+  color: #333333;
+  text-decoration: none;
+}
+input[type=submit]:active,
+input[type=button]:active,
+input[type=reset]:active,
+button:active,
+.auiButton:active,
+.auiButtonAction:active,
+.auiButtonBold:active,
+.auiButtonSearch:active,
+.auiButtonSmall:active,
+.auiButtonDisabled:active,
+.auiButtonIcon:active,
+.auiButtonDummy:active,
+.auiButtonIconDummy:active,
+.auiSelectButton a:active,
+.auiSelectButtonSmall a:active,
+.auiWidget .auiSelectButton a:active,
+.auiWidget .auiSelectButtonSmall a:active {
+  background-image: none !important;
+  -webkit-filter: none !important;
+  -moz-filter: none !important;
+  filter: none !important;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2) !important;
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2) !important;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2) !important;
+  background-color: #d2d2d2 !important;
+}
+input[type=submit]:hover, input[type=submit]:focus,
+input[type=button]:hover,
+input[type=button]:focus,
+input[type=reset]:hover,
+input[type=reset]:focus,
+button:hover,
+button:focus,
+.auiButton:hover,
+.auiButton:focus,
+.auiButtonAction:hover,
+.auiButtonAction:focus,
+.auiButtonBold:hover,
+.auiButtonBold:focus,
+.auiButtonSearch:hover,
+.auiButtonSearch:focus,
+.auiButtonSmall:hover,
+.auiButtonSmall:focus,
+.auiButtonDisabled:hover,
+.auiButtonDisabled:focus,
+.auiButtonIcon:hover,
+.auiButtonIcon:focus,
+.auiButtonDummy:hover,
+.auiButtonDummy:focus,
+.auiButtonIconDummy:hover,
+.auiButtonIconDummy:focus,
+.auiSelectButton a:hover,
+.auiSelectButton a:focus,
+.auiSelectButtonSmall a:hover,
+.auiSelectButtonSmall a:focus,
+.auiWidget .auiSelectButton a:hover,
+.auiWidget .auiSelectButton a:focus,
+.auiWidget .auiSelectButtonSmall a:hover,
+.auiWidget .auiSelectButtonSmall a:focus {
+  border: solid 1px #999999;
+  color: #333333;
+  text-decoration: none;
+}
+input[type=submit]:focus,
+input[type=button]:focus,
+input[type=reset]:focus,
+button:focus,
+.auiButton:focus,
+.auiButtonAction:focus,
+.auiButtonBold:focus,
+.auiButtonSearch:focus,
+.auiButtonSmall:focus,
+.auiButtonDisabled:focus,
+.auiButtonIcon:focus,
+.auiButtonDummy:focus,
+.auiButtonIconDummy:focus,
+.auiSelectButton a:focus,
+.auiSelectButtonSmall a:focus,
+.auiWidget .auiSelectButton a:focus,
+.auiWidget .auiSelectButtonSmall a:focus {
+  outline: none;
+}
+input[type=submit] span,
+input[type=button] span,
+input[type=reset] span,
+button span,
+.auiButton span,
+.auiButtonAction span,
+.auiButtonBold span,
+.auiButtonSearch span,
+.auiButtonSmall span,
+.auiButtonDisabled span,
+.auiButtonIcon span,
+.auiButtonDummy span,
+.auiButtonIconDummy span,
+.auiSelectButton a span,
+.auiSelectButtonSmall a span,
+.auiWidget .auiSelectButton a span,
+.auiWidget .auiSelectButtonSmall a span {
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+@-moz-document url-prefix() {
+  /*Fx*/
+  input[type=submit],
+  input[type=button],
+  input[type=reset],
+  button {
+    padding: 0 6px !important;
+  }
+   input[type=submit],
+  input[type=button],
+  input[type=reset],
+  button,
+  .auiButton,
+  .auiButtonAction,
+  .auiButtonBold,
+  .auiButtonSearch,
+  .auiButtonSmall,
+  .auiButtonDisabled,
+  .auiButtonIcon,
+  .auiButtonDummy,
+  .auiButtonIconDummy,
+  .auiSelectButton a,
+  .auiSelectButtonSmall a,
+  .auiWidget .auiSelectButton a,
+  .auiWidget .auiSelectButtonSmall a {
+    line-height: -moz-block-height;
+  }
+}
+
+*:first-child + html input[type=submit],
+*:first-child + html input[type=button],
+*:first-child + html input[type=reset],
+*:first-child + html button {
+  height: 32px;
+  line-height: 26px;
+}
+
+button.auiButton,
+button {
+  padding: 0 0.55em;
+}
+
+.auiButtonSmall {
+  padding: 0 5px;
+  height: 24px !important;
+  line-height: 24px !important;
+  font-size: 11px;
+}
+
+input[type=submit].auiButtonSmall,
+input[type=button].auiButtonSmall,
+input[type=reset].auiButtonSmall,
+button.auiButtonSmall {
+  line-height: 1em !important;
+}
+
+.auiButtonAction,
+input.auiButtonAction {
+  background-color: #ff9900;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffa31a), color-stop(100%, #ff8400));
+  background-image: -webkit-linear-gradient(top, #ffa31a, #ff8400);
+  background-image: -moz-linear-gradient(top, #ffa31a, #ff8400);
+  background-image: -o-linear-gradient(top, #ffa31a, #ff8400);
+  background-image: linear-gradient(top, #ffa31a, #ff8400);
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFFA31A', endColorstr='#FFFF8400');
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  color: white;
+  border: solid 1px #e68a00 !important;
+}
+.auiButtonAction:hover, .auiButtonAction:focus,
+input.auiButtonAction:hover,
+input.auiButtonAction:focus {
+  color: white;
+  border: solid 1px #804d00 !important;
+}
+.auiButtonAction:active,
+input.auiButtonAction:active {
+  background-color: #ff6e00 !important;
+  border: solid 1px #804d00 !important;
+}
+.auiButtonAction .fa, .auiButtonAction [class*="icon-"], .auiButtonAction [class^="icon-"],
+input.auiButtonAction .fa,
+input.auiButtonAction [class*="icon-"],
+input.auiButtonAction [class^="icon-"] {
+  color: white;
+}
+
+.auiButtonDisabled,
+.auiButtonDisabled:hover,
+.auiButtonDisabled:active,
+input[disabled],
+input[disabled]:hover,
+input[disabled]:active,
+button[disabled],
+button[disabled]:hover,
+button[disabled]:active {
+  color: #999999 !important;
+  background-image: none !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false) !important;
+  background-color: #f0f0f0 !important;
+  border: solid 1px #d2d2d2 !important;
+  cursor: default;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  text-shadow: 0 1px 0 white;
+}
+
+.auiButton span {
+  display: table-cell;
+  min-width: 20px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.auiButton i {
+  color: #333333;
+}
+
+.auiButtonSmall span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.auiButton img,
+.auiButtonSmall img {
+  display: inline;
+  vertical-align: middle;
+}
+
+.auiButtonIcon,
+.auiButtonIconDummy {
+  min-width: 24px;
+  height: 24px;
+  line-height: 24px;
+  padding: 3px;
+}
+.auiButtonIcon span,
+.auiButtonIconDummy span {
+  display: table-cell;
+  min-width: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  cursor: pointer;
+  vertical-align: baseline;
+}
+.auiButtonIcon [class*="icon-"],
+.auiButtonIconDummy [class*="icon-"] {
+  display: inline-block;
+  color: #666;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+}
+
+[class^="auiButton"] [class^="icon-"] {
+  line-height: 16px;
+}
+[class^="auiButton"] .icon-remove {
+  font-size: 15px !important;
+  line-height: 15px !important;
+}
+
+.auiButtonDummy,
+.auiButtonDummy span,
+.auiButtonDummy i,
+.auiButtonIconDummy,
+.auiButtonIconDummy span,
+.auiButtonIconDummy i {
+  cursor: default !important;
+}
+
+/***************************************************
+	auiSelectButton
+--------------------------------------------------*/
+.auiSelectButton,
+.auiSelectButtonSmall {
+  background: #fff;
+}
+.auiSelectButton ul,
+.auiSelectButtonSmall ul {
+  display: inline;
+}
+.auiSelectButton li,
+.auiSelectButton div,
+.auiSelectButtonSmall li,
+.auiSelectButtonSmall div {
+  float: left;
+  background: none;
+  padding: 0;
+  line-height: 1;
+}
+.auiSelectButton a, .auiWidget .auiSelectButton a,
+.auiSelectButtonSmall a, .auiWidget
+.auiSelectButtonSmall a {
+  display: block;
+  margin: 0 -1px;
+  padding: 0 !important;
+  line-height: 30px;
+  min-width: 27px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  border-color: #d2d2d2 #d2d2d2 silver;
+}
+.auiSelectButton a [class*=icon-],
+.auiSelectButtonSmall a [class*=icon-] {
+  line-height: 30px;
+}
+.auiSelectButton a .icon-backward,
+.auiSelectButton a .icon-forward,
+.auiSelectButtonSmall a .icon-backward,
+.auiSelectButtonSmall a .icon-forward {
+  font-size: 10px;
+}
+.auiSelectButton a .icon-backward,
+.auiSelectButtonSmall a .icon-backward {
+  margin-right: 2px;
+}
+.auiSelectButton a .icon-forward,
+.auiSelectButtonSmall a .icon-forward {
+  margin-left: 1px;
+}
+.auiSelectButton a:hover, .auiSelectButton a:active, .auiSelectButton a:focus,
+.auiSelectButtonSmall a:hover,
+.auiSelectButtonSmall a:active,
+.auiSelectButtonSmall a:focus {
+  position: relative;
+}
+.auiSelectButton a.first,
+.auiSelectButton a.btn,
+.auiSelectButtonSmall a.first,
+.auiSelectButtonSmall a.btn {
+  margin-left: 0;
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.auiSelectButton a.last,
+.auiSelectButton a.btn,
+.auiSelectButtonSmall a.last,
+.auiSelectButtonSmall a.btn {
+  margin-right: 0;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.auiSelectButton a:hover span,
+.auiSelectButtonSmall a:hover span {
+  color: #333333;
+}
+.auiSelectButton span i,
+.auiSelectButton span img,
+.auiSelectButtonSmall span i,
+.auiSelectButtonSmall span img {
+  margin: 6px 0;
+}
+.auiSelectButton .active a,
+.auiSelectButtonSmall .active a {
+  background: #d2d2d2;
+  border-color: #d2d2d2 #d2d2d2 silver;
+  cursor: default;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false) !important;
+}
+.auiSelectButton .active a:focus,
+.auiSelectButton .active a:active,
+.auiSelectButtonSmall .active a:focus,
+.auiSelectButtonSmall .active a:active {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+.auiSelectButton .active a:hover span,
+.auiSelectButtonSmall .active a:hover span {
+  cursor: default;
+}
+.auiSelectButton .auiIconArrowLeft,
+.auiSelectButtonSmall .auiIconArrowLeft {
+  margin-left: -4px !important;
+}
+.auiWidget .auiSelectButton span, .auiWidget
+.auiSelectButtonSmall span {
+  padding: 0;
+  background-image: none;
+}
+.auiSelectButton .count,
+.auiSelectButtonSmall .count {
+  line-height: 30px;
+}
+
+.auiSelectButtonSmall a, .auiWidget .auiSelectButtonSmall a {
+  height: 24px;
+  line-height: 24px;
+  min-width: 24px;
+}
+.auiSelectButtonSmall a [class*=icon-] {
+  line-height: 22px;
+}
+
+.selectCount {
+  display: inline-block;
+  line-height: 100%;
+}
+
+/***************************************************
+	icon
+--------------------------------------------------*/
+[class^="auiButton"] .icon-remove {
+  font-size: 15px !important;
+  line-height: 15px !important;
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("fontawesome-webfont.eot");
+  src: url("fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("fontawesome-webfont.woff") format("woff"), url("fontawesome-webfont.ttf") format("truetype"), url("fontawesome-webfont.svg#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/***************************************************
+	activityField
+--------------------------------------------------*/
+.activityField {
+  position: relative;
+  width: 17px;
+  height: 18px;
+  padding: 5px 6px 0;
+  cursor: pointer;
+}
+
+.hdActivity div,
+.hdInformation div {
+  outline: 0;
+}
+
+.hdIcon {
+  float: left !important;
+  font-size: 9px;
+  height: 13px;
+  line-height: 13px !important;
+  padding: 0 2px 0 1px;
+  text-align: center;
+  margin-top: 5px;
+  margin-right: 2px;
+}
+.hdIcon i {
+  font-size: 15px;
+  text-align: center;
+  line-height: 13px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  color: #ff9900;
+}
+
+.counter {
+  float: left !important;
+  font-size: 10px;
+  height: 13px;
+  min-width: 11px;
+  line-height: 13px !important;
+  padding: 0 2px 0 1px;
+  text-align: center;
+  margin-top: 5px;
+  margin-right: 2px;
+  color: #FFFFFF;
+  background: #ff3333 !important;
+  text-decoration: none;
+}
+
+.counter.zero {
+  background: #b5b5b5 !important;
+}
+
+/***************************************************
+	Popup
+--------------------------------------------------*/
+.dijitPopup {
+  display: block;
+  z-index: 9999 !important;
+}
+
+.auiPopup,
+.activityPopup {
+  background: white;
+  padding: 9px;
+  border: 1px solid silver;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 9998 !important;
+}
+
+.activityPopup {
+  width: 400px;
+  right: 0;
+  top: 0;
+}
+
+.auiPopupHead {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+.auiPopupHead:before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 1px;
+  font-family: 'FontAwesome';
+  font-size: 15px;
+  line-height: 24px;
+  content: "\f138";
+  color: #d2d2d2;
+}
+
+.auiPopupHead {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+.auiPopupHead:before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: 'FontAwesome';
+  font-size: 15px;
+  line-height: 24px;
+  content: "\f138";
+  color: #d2d2d2;
+}
+.auiPopupHead .auiPopupTitle {
+  line-height: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.auiPopupTool {
+  float: right;
+}
+
+.auiPopupTool > div {
+  float: left;
+  margin-left: 5px;
+}
+
+.auiPopupTool .auiButtonSmall {
+  padding: 3px !important;
+  font-size: 14px;
+  color: #666666;
+}
+
+.auiPopupTool .auiButtonSmall:hover i {
+  color: #333333;
+}
+
+.auiPopupTool .auiButtonSmall span {
+  width: 16px;
+  height: 16px;
+}
+
+.auiPopupMeta {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.auiPopupMeta .auiPopupTitle {
+  position: absolute;
+  max-width: 90%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.auiPopupClose {
+  float: right;
+}
+
+.auiPopupClose a {
+  display: block;
+  background: #ffffff;
+}
+
+.auiPopup h2,
+#activityListPane h2 {
+  padding: 0 0 5px;
+  border-bottom: solid 1px silver;
+}
+
+.auiPopup .roundBlockWrapperTop,
+.auiPopup .roundBlockTitle,
+.auiPopup .roundBlockIcon {
+  height: auto !important;
+  width: 100%;
+}
+
+.auiPopup .roundBlockWrapperTop td.roundBlockTitle {
+  padding: 10px 0 10px 20px;
+  background-position: 0px 10px;
+}
+
+.auiPopup .roundBlockWrapperTop td.roundBlockIcon {
+  padding: 10px 0;
+  background: none;
+  white-space: nowrap;
+}
+
+.auiPopupButtons .auiButton, .auiPopupButtons .auiSelectButton a, .auiSelectButton .auiPopupButtons a,
+.auiPopupButtons .auiSelectButtonSmall a,
+.auiSelectButtonSmall .auiPopupButtons a,
+.auiPopupButtons .auiButtonAction,
+.auiPopupButtons .auiButtonBold,
+.auiPopupButtons .auiButtonSearch,
+.auiPopupButtons .auiButtonSmall,
+.auiPopupButtons .auiButtonDisabled,
+.auiPopupButtons .auiButtonIcon,
+.auiPopupButtons .auiButtonDummy,
+.auiPopupButtons .auiButtonIconDummy,
+.auiPopupButtons input[type=submit],
+.auiPopupButtons input[type=button],
+.auiPopupButtons input[type=reset],
+.auiPopupButtons button {
+  margin: 2px 0;
+}
+
+.auiPooupThumbnail {
+  position: relative;
+  padding-left: 143px;
+  margin-bottom: 25px;
+}
+.auiPooupThumbnail .avatar {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  height: 100px;
+  width: 100px;
+  border-radius: 3px;
+}
+.auiPooupThumbnail .auiPooupName {
+  min-height: 100px;
+  padding-top: 10px;
+}
+.auiPooupThumbnail .auiPooupName strong {
+  font-size: 22px;
+  display: block;
+}
+.auiPooupThumbnail .auiPooupName span {
+  display: block;
+  margin-top: 3px;
+  padding-left: 1px;
+}
+.auiPooupThumbnail .auiPooupName .auiButton {
+  margin-top: 15px;
+}
+
+.activityTable {
+  border: none;
+  padding: 0;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.activityTable tr:hover {
+  background: #f6f6f6;
+}
+
+.activityTable td {
+  padding: 3px;
+  margin: 0;
+  border-bottom: #ededed solid 1px;
+  vertical-align: top;
+}
+
+.activityTable td.icon {
+  width: 22px;
+  padding: 0;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.activityTable td.name {
+  width: 100px;
+  font-size: 85%;
+  vertical-align: middle;
+}
+
+.activityTable td.name {
+  width: 70px;
+}
+
+.activityTable td span.date {
+  font-size: 85%;
+  padding: 0 0 3px;
+  display: block;
+}
+
+.activityTable .unread {
+  background: #FFEFE5;
+}
+
+.activityTable .unread td {
+  font-weight: bold;
+}
+
+.activityList {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.activityList li {
+  padding: 3px;
+  margin: 0;
+  border-bottom: #ededed solid 1px;
+  vertical-align: top;
+  background: none;
+}
+
+.activityList li:hover {
+  background: #f6f6f6;
+}
+
+.activityList .meta {
+  padding: 2px 0;
+  font-size: 85%;
+}
+
+.activityList li.unread {
+  background: #f0f0f0 !important;
+}
+
+.activityList li.unread a {
+  font-weight: bold;
+}
+
+.rightBtn {
+  text-align: right;
+  margin: 0;
+  font-size: 11px;
+}
+
+/* imgPopup */
+.imgPopup {
+  position: absolute !important;
+}
+.imgPopup .imgBody {
+  text-align: center;
+}
+.imgPopup img {
+  max-width: 800px;
+  max-height: 800px;
+}
+.imgPopup .meta {
+  position: absolute;
+  /*right: -10px;*/
+  /*top: -40px;*/
+  right: 10px;
+  top: -32px;
+}
+.imgPopup .meta a {
+  display: inline-block;
+  text-decoration: none;
+}
+.imgPopup .meta [class*="icon-"] {
+  font-size: 24px;
+}
+
+.imgPopup .dlLink {
+  padding: 12px 10px 7px;
+}
+
+/* imgPopupTutorial */
+.imgPopupTutorial {
+  position: absolute;
+  overflow: hidden;
+}
+
+.imgPopupTutorial .imgBody {
+  text-align: center;
+}
+
+.imgPopupTutorial img {
+  max-width: 1000px;
+  max-height: 1000px;
+}
+
+.startPopup {
+  width: 600px;
+  padding: 45px 50px 30px;
+  position: relative;
+}
+
+.startPopupTool {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.startPopupHead {
+  margin-bottom: 35px;
+  font-size: 32px;
+  text-align: center;
+}
+
+.startPopupContent {
+  text-align: left;
+}
+
+.startPopup img.middle {
+  vertical-align: -0.2em !important;
+}
+
+.startPopup input[type=checkbox],
+.startPopup input[type=radio] {
+  vertical-align: -0.18em;
+  vertical-align: 0\9;
+  *vertical-align: 0;
+}
+
+/***************************************************
+	auiColumns
+--------------------------------------------------*/
+.auiColumnWrapper {
+  padding: 10px;
+}
+
+.auiColumn {
+  float: left;
+}
+
+/***************************************************
+	auiPortlet
+--------------------------------------------------*/
+.auiPortlet {
+  background: white url("../images/common/portlet_20140718.png") repeat-x left bottom;
+  margin: 10px 5px;
+}
+.auiPortlet .auiPortletHead {
+  border-bottom: solid 1px #ededed;
+  background: url("../images/common/portlet_20140718.png") repeat-x left top;
+}
+.auiPortlet .auiPortletHead .inner {
+  background: url("../images/common/portlet_20140718.png") no-repeat left -100px;
+  height: 35px;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.auiPortlet .auiPortletBody .auiPortletHead > .inner {
+  padding: 0 !important;
+}
+.auiPortlet .auiPortletTitle {
+  float: left;
+  white-space: nowrap;
+}
+.auiPortlet .auiPortletTool {
+  background: url("../images/common/portlet_20140718.png") no-repeat right -200px;
+  top: 0;
+  right: 0;
+  float: right;
+  min-height: 15px;
+  padding: 10px;
+  position: absolute;
+}
+.auiPortlet .auiPortletTool > div {
+  float: left;
+  padding: 0 5px;
+  background: #ffffff;
+  -moz-box-shadow: -5px 0 3px #ffffff;
+  -webkit-box-shadow: -5px 0 3px #ffffff;
+  box-shadow: -5px 0 3px #ffffff;
+  white-space: nowrap;
+}
+.auiPortlet .auiPortletSetting {
+  padding-right: 0 !important;
+}
+.auiPortlet .auiPortletSetting .menubar {
+  right: 15px;
+}
+.auiPortlet .auiPortletDelete a {
+  background: none;
+  color: #666666;
+  font-size: 15px;
+}
+.auiPortlet .auiPortletDelete a:hover {
+  color: white;
+}
+.auiPortlet .auiPortletDelete a, .auiPortlet .auiPortletDelete i {
+  line-height: 16px;
+  text-decoration: none;
+  text-align: center;
+}
+.auiPortlet .auiPortletBody {
+  background: #ffffff;
+  border-left: solid 1px #d2d2d2;
+  border-right: solid 1px #d2d2d2;
+}
+.auiPortlet .auiPortletBody > .inner {
+  padding: 10px 10px 0 10px;
+}
+.auiPortlet .auiPortletBody .inner:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.auiPortlet .auiPortletFoot {
+  background: url("../images/common/portlet_20140718.png") no-repeat left -390px;
+}
+.auiPortlet .auiPortletFoot .inner {
+  height: 10px;
+  background: url("../images/common/portlet_20140718.png") no-repeat right -490px;
+}
+.auiPortlet .auiPortletBody .auiPortletFoot .inner {
+  padding: 0 !important;
+}
+
+/***************************************************
+	auiListWrapper
+--------------------------------------------------*/
+.auiListWrapper {
+  height: 305px;
+  overflow-y: auto;
+}
+
+/***************************************************
+	userList
+--------------------------------------------------*/
+.userList li {
+  background: none;
+  padding: 0;
+  border-bottom: solid 1px #ededed;
+}
+.userList label {
+  display: inline-block;
+  width: 100%;
+}
+.userList .content {
+  width: 100%;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.userList .content div {
+  display: table-cell;
+  *display: inline;
+  vertical-align: middle;
+  zoom: 1;
+  padding: 5px 10px 5px 0;
+}
+.userList .content div.check {
+  padding-left: 10px;
+}
+.userList .avatar {
+  height: 50px;
+}
+.userList .avatar img {
+  height: 50px;
+  width: 50px;
+}
+.userList .avatar_s {
+  height: 24px;
+}
+.userList .avatar_s img {
+  height: 24px;
+  width: 24px;
+}
+
+.userListIcon {
+  margin-bottom: 5px;
+}
+.userListIcon li {
+  display: block;
+  float: left;
+  background: none;
+  margin: 0 4px 5px 0;
+  padding: 0;
+}
+.userListIcon .avatar img,
+.userListIcon [class*=icon-] {
+  display: block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #d2d2d2;
+}
+.userListIcon a:hover [class*=icon-] {
+  color: #333333;
+}
+
+/***************************************************
+	footer
+--------------------------------------------------*/
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  font-size: 0.9em;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  background: #666;
+  color: #fff;
+  overflow: hidden;
+  z-index: 995;
+}
+
+#login #footer {
+  position: static;
+  border-top: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+#footer a {
+  text-decoration: none;
+}
+
+#footText,
+#footText a {
+  color: #fff;
+}
+
+#footText a:hover {
+  text-decoration: underline;
+}
+
+#footText div {
+  display: inline;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 1em;
+  border-left: solid 1px silver;
+}
+
+#footer div.copyright {
+  text-align: center;
+  border-left: none;
+}
+
+/***************************************************
+	startGuide
+--------------------------------------------------*/
+#startGuide {
+  width: 100%;
+  height: 130px;
+  overflow: hidden;
+  animation: 1s fadeIn;
+  -webkit-animation: 1s fadeIn;
+}
+
+#startGuide a {
+  text-decoration: none;
+}
+
+#startGuide .close {
+  position: absolute;
+  right: 0;
+  padding: 20px;
+}
+
+#startGuide .close a {
+  color: #fff;
+}
+
+.guideContents {
+  float: left;
+  width: 189px;
+  padding: 20px;
+  text-align: center;
+  border-right: solid 1px #505050;
+}
+
+.guideContents p {
+  margin: 20px 0;
+}
+
+/***************************************************
+	auiTabs
+--------------------------------------------------*/
+.auiTabs .tab {
+  border-bottom: solid 1px #d2d2d2;
+}
+.auiTabs .tab > li {
+  float: left;
+  margin-bottom: -1px;
+  padding: 0;
+  background: none;
+}
+.auiTabs .tab > li a {
+  display: block;
+  line-height: 30px;
+  margin: 0 5px 0 0;
+  padding: 0 20px;
+  text-align: center;
+  text-decoration: none;
+  background-color: white;
+  color: #999999;
+  border: solid 1px #d2d2d2;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  -ms-border-radius: 3px 3px 0 0;
+  -o-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+}
+.auiTabs .tab > li a:hover {
+  color: #ff9900;
+}
+.auiTabs .tab > li:first-child a {
+  margin: 0 5px;
+}
+.auiTabs .tab > li.active a {
+  color: #333333;
+  border-bottom-color: transparent;
+}
+.auiTabs .tab > li.active a:hover {
+  color: #333333;
+  cursor: default;
+}
+.auiTabs .tabContents > li {
+  display: none;
+  padding: 10px 0 !important;
+  background: none;
+}
+.auiTabs .tabContents > li.active {
+  display: block;
+}
+
+/***************************************************
+	auiLogin
+--------------------------------------------------*/
+#auiLoginBox {
+  width: 480px;
+  margin: 85px auto 0 auto;
+  padding-bottom: 60px;
+  background: url(../images/login_foot.png) left bottom no-repeat;
+}
+
+#auiLoginInner {
+  padding: 45px 50px 15px 50px;
+  background: url(../images/login_body.png) no-repeat;
+}
+
+#auiLoginBox .logo {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#auiLoginBox .inlineLabel {
+  vertical-align: middle;
+}
+
+#auiLoginBox .field {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+#auiLoginBox .guide {
+  position: absolute;
+  height: 2em;
+  line-height: 2em;
+  margin: 0.5em 0;
+  top: 0;
+  left: 5px;
+  color: #999999;
+}
+
+#auiLoginBox input.text {
+  width: 100%;
+  height: 3em;
+  *height: 1.5em;
+  /*IE6-7Hack*/
+  line-height: 1.5em;
+  padding: 0.75em 5px;
+  ime-mode: disable;
+}
+
+#auiLoginBox select {
+  height: 3em;
+  margin: 0;
+}
+
+#auiLoginBox select.select1 {
+  float: left;
+  width: 40%;
+}
+
+#auiLoginBox select.select2 {
+  float: right;
+  width: 58%;
+}
+
+#auiLoginBox input.button {
+  width: 152px;
+  height: 43px;
+  padding: 0;
+  color: #fff;
+  font-size: 14px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+  background: url(../images/login_btn_back.png) 0px 0px no-repeat;
+  filter: none;
+}
+
+#auiLoginBox input.button:hover {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  background: url(../images/login_btn_back.png) 0px -50px no-repeat !important;
+}
+
+#auiLoginBox input.button:active,
+#auiLoginBox input.button:focus,
+#auiLoginBox input.button[disabled] {
+  background: url(../images/login_btn_back.png) 0px -100px no-repeat !important;
+  color: white !important;
+}
+
+/***************************************************
+	alert
+--------------------------------------------------*/
+.loginAlert,
+.alert {
+  margin: 10px 0;
+  padding: 10px;
+  background: #ffcccc;
+  animation: 1s fadeIn;
+  -webkit-animation: 1s fadeIn;
+}
+.loginAlert .alertTool,
+.alert .alertTool {
+  float: right;
+}
+.loginAlert .alertTool a i,
+.alert .alertTool a i {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  text-decoration: none;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+}
+.loginAlert .alertHead,
+.alert .alertHead {
+  border-bottom: solid 1px #d2d2d2;
+  padding-bottom: 9px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  line-height: 20px;
+}
+.roundMainWrapper > .loginAlert, .roundMainWrapper >
+.alert {
+  margin: 10px 5px 0 5px;
+}
+
+.alertSuccess {
+  margin: 10px 0;
+  padding: 10px;
+  background: #f0f0f0;
+}
+.alertRecommend {
+  margin: 10px 0;
+  padding: 10px;
+  background: #FFFFE5;
+}
+
+.alertInfo {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #dff0d8;
+}
+
+/***************************************************
+	dialogTable
+--------------------------------------------------*/
+.dialogTable {
+  margin: 10px 0;
+  border-top: solid 1px #ededed;
+  border-collapse: collapse;
+}
+.dialogTable th,
+.dialogTable td {
+  padding: 10px;
+  border-bottom: solid 1px #ededed;
+}
+.dialogTable .caption {
+  font-weight: bold;
+}
+
+/***************************************************
+	auiWidgetsArea
+--------------------------------------------------*/
+#auiWidgetsArea {
+  float: left;
+  width: 180px;
+}
+
+#auiWidgetsArea2 {
+  float: right;
+  width: 180px;
+}
+
+.auiWidget {
+  clear: both;
+  padding: 10px 0;
+  border-bottom: solid 1px #ededed;
+}
+.auiWidget h2 {
+  line-height: 2em;
+}
+.auiWidget p {
+  margin: 0.8em 0;
+}
+.auiWidget li {
+  padding: 0;
+  background: none;
+}
+
+.auiWidget li span {
+  display: block;
+  line-height: 1.8em;
+  padding: 0.3em 0 0.3em 18px;
+  background: url("../images/common/li_icon.gif") no-repeat scroll 5px 1em;
+}
+
+.auiWidget li a {
+  display: block;
+  line-height: 1.8em;
+  padding: 0.3em 0 0.3em 10px;
+  text-decoration: none;
+  background: none;
+  white-space: nowrap;
+  overflow: hidden;
+  width: auto;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.auiWidget li a:hover {
+  color: #000;
+  background: #f6f6f6;
+}
+.auiWidget li ul {
+  margin: 0;
+}
+.auiWidget li li a,
+.auiWidget li li a:hover,
+.auiWidget li li.active a {
+  padding: 0.3em 0 0.3em 36px;
+  background-position: 23px 1em;
+}
+.auiWidget li.active > a {
+  font-weight: bold;
+  background: #f0f0f0;
+}
+
+.inlistCount {
+  color: black;
+  display: inline-block;
+  font-size: 10px;
+  width: 20px;
+  margin: 0 5px 0 -5px;
+  text-align: center;
+}
+.inlistCount.noread {
+  font-weight: bold;
+}
+
+/***************************************************
+	submenu_v2
+--------------------------------------------------*/
+.submenu_v2 {
+  margin: 10px 5px;
+  clear: both;
+  width: 200px;
+  overflow: hidden;
+  background: url("../images/common/bg_submenu_20140903.gif") no-repeat left top;
+}
+.submenu_v2 > ul {
+  background: url("../images/common/bg_submenu_20140903.gif") no-repeat right bottom;
+  padding: 6px 0;
+}
+.submenu_v2 li {
+  padding: 0 5px;
+  background: #ffffff;
+  border-right: solid 1px #d2d2d2;
+  border-left: solid 1px #d2d2d2;
+}
+.submenu_v2 li span {
+  display: block;
+  line-height: 1.8em;
+  padding: 0.3em 0 0.3em 18px;
+}
+.submenu_v2 li a {
+  display: block;
+  line-height: 35px;
+  padding: 0 10px;
+  text-decoration: none;
+  background: none;
+  white-space: nowrap;
+  overflow: hidden;
+  width: auto;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.submenu_v2 li a:hover {
+  color: #000;
+  background: #f6f6f6;
+}
+.submenu_v2 li ul {
+  margin: 0;
+}
+.submenu_v2 li li a,
+.submenu_v2 li li a:hover,
+.submenu_v2 li li.active a {
+  padding: 0.3em 0 0.3em 36px;
+  background-position: 23px 1em;
+}
+.submenu_v2 li.selected > a {
+  font-weight: bold;
+  background: #f0f0f0;
+}
+
+/***************************************************
+	auiContentsArea
+--------------------------------------------------*/
+#auiContentsArea {
+  float: right;
+  width: 100%;
+  margin-left: -200px;
+}
+
+#auiContentsAreaInner {
+  position: relative;
+  margin-left: 200px;
+}
+
+#auiContentsArea h2, h2.caption {
+  margin: 0;
+  font-size: 16px;
+}
+
+#auiThreeClumns {
+  float: left;
+  width: 100%;
+  margin-right: -200px;
+}
+
+#auiThreeClumnsInner {
+  margin-right: 200px;
+}
+
+#auiThreeColumnWidgets {
+  float: right;
+  width: 180px;
+}
+
+/***************************************************
+	auiWideArea
+--------------------------------------------------*/
+#auiWideArea,
+#auiWideAreaInner {
+  width: 100%;
+  height: 100%;
+}
+
+/***************************************************
+	auiMultiSelector
+--------------------------------------------------*/
+.auiMultiSelector.auiSummaryMeta {
+  margin-top: -5px;
+}
+
+.auiMultiSelector .floatLeft,
+.auiMultiSelector .floatRight {
+  margin-top: 5px;
+}
+
+.auiMultiSelector .auiSelectButton ul {
+  white-space: nowrap;
+}
+
+/***************************************************
+	auiSearch
+--------------------------------------------------*/
+.auiSearch {
+  position: relative;
+}
+.auiSearch input[type="text"] {
+  outline: none;
+}
+.auiSearch input.long {
+  min-width: 320px;
+}
+.auiSearch input.date {
+  width: 7em;
+}
+
+.auiSearchOption {
+  position: absolute;
+  top: 28px;
+  left: 0px;
+  width: 360px;
+  padding: 10px;
+  border: solid 1px silver;
+  background: #fff;
+  overflow: hidden;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.auiSearchOption .close {
+  float: right;
+}
+.auiSearchOption .element {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: solid 1px #ededed;
+}
+.auiSearchOption label {
+  line-height: 2em;
+  cursor: default;
+}
+
+.auiSearchResult {
+  clear: both;
+  font-weight: bold;
+}
+
+.auiSearchMore {
+  line-height: 2em;
+  margin-bottom: 2em;
+}
+.searchKeyword{
+  background:#fffee0;
+  padding:2px 3px;
+  margin:0 1px;
+  border-radius:3px;
+  display: inline !important;
+  text-shadow:0 1px 0 rgba(255,255,255,.3);
+}
+
+/* ------------------------------------------------
+   auiSearch.gray  2015.05.11
+--------------------------------------------------- */
+.auiSearch.gray {
+  position: relative;
+  padding-right: 30px;
+}
+.auiSearch.gray input[type="text"] {
+  border-radius: 4px 0 0 4px;
+  padding-left: 7px;
+  min-width: 230px;
+  border-color: #eee;
+  background: #eee;
+  outline: none;
+}
+[id^="timelineSearchForm"].auiSearch.gray input[type="text"] {
+min-width: inherit;
+}
+.auiSearch.gray input[type="text"]:focus {
+  background: #ffffff;
+  border-color: #e5e5e5;
+  box-shadow: none;
+  /* min-width: 320px; */
+}
+.auiSearch.gray button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32px;
+  border-radius: 0 4px 4px 0;
+  margin-left: -1px;
+  border-color: #eee;
+  border-left-color: #ffffff;
+  background: #eee !important;
+  filter: none !important;
+}
+.auiSearch.gray button:focus {
+  /* background: #ff9900; */
+}
+.auiSearch.gray.focus input[type="text"] {
+  background: #ffffff;
+  border-color: #e5e5e5;
+  box-shadow: none;
+}
+.auiSearch.gray.focus button,
+.auiSearch.gray.focus button:active{
+  background: #ff9900 !important;
+  border-color: #e68a00 !important;
+  text-shadow: none;
+}
+.auiSearch.gray.focus button i,
+.auiSearch.gray.focus button:active i{
+  color: #ffffff !important;
+}
+
+/***************************************************
+	auiSummaryMeta
+--------------------------------------------------*/
+.auiSummaryMeta {
+  position: relative;
+  width: 100%;
+  line-height: 32px;
+  margin: 10px 0;
+  vertical-align: middle;
+}
+.auiSummaryMeta .caption {
+  padding: 8px 0;
+  font-weight: bold;
+}
+.auiSummaryMeta form {
+  /*line-height: 32px;*/
+  line-height: 30px;
+}
+.auiSummaryMeta .icon-print {
+  font-size: 17px;
+}
+
+.count {
+  float: left;
+  line-height: 32px;
+  margin: 0 5px;
+  white-space: nowrap;
+}
+
+.auiSummaryTitle {
+  line-height: 2em;
+  font-weight: bold;
+}
+
+.auiSummaryMetaText.floatLeft {
+  margin-left: 10px;
+}
+
+.auiSummaryMetaText.floatRight {
+  margin-right: 10px;
+}
+
+/***************************************************
+	auiGridTable
+--------------------------------------------------*/
+.auiGridTable {
+  border-collapse: collapse;
+}
+
+.auiGridTable th {
+  padding: 8px 5px;
+  white-space: nowrap;
+  border: 1px solid silver;
+  background: #f0f0f0;
+}
+
+.auiGridTable td {
+  padding: 8px 5px;
+  border: 1px solid silver;
+}
+
+.auiGridTable .even {
+  background: #f0f0f0;
+}
+
+.auiGridTable .sunday td,
+.auiGridTable .sunday th,
+.auiGridTable .holiday td,
+.auiGridTable .holiday th {
+  background: #ffefe5;
+}
+
+.auiGridTable .saturday td,
+.auiGridTable .saturday th {
+  background: #ebf0f6;
+}
+
+.auiGridTable .today td,
+.auiGridTable .today th {
+  background: #e0ffe0;
+}
+
+.auiGridTable tr:hover td,
+.auiGridTable tr:hover th {
+  background: #ffffe0;
+}
+
+/***************************************************
+	auiRowTable
+--------------------------------------------------*/
+.auiRowTable {
+  border-spacing: 0;
+  border-collapse: collapse;
+  word-break: break-all;
+}
+.auiRowTable th {
+  padding: 8px 5px;
+  white-space: nowrap;
+  background: #f0f0f0;
+  text-align: left;
+}
+.auiRowTable td {
+  padding: 8px 5px;
+  border-bottom: solid 1px #ededed;
+}
+.auiRowTable .dayStart td {
+  border-top: solid 1px #d2d2d2;
+}
+.auiRowTable .day,
+.auiRowTable .time {
+  white-space: nowrap;
+}
+.auiRowTable .day {
+  white-space: nowrap;
+  background: #f6f6f6;
+}
+.auiRowTable .day a {
+  white-space: nowrap;
+}
+.auiRowTable .time {
+  width: 40px;
+}
+.auiRowTable div {
+  width: 100%;
+  margin: -8px 0;
+  height: 35px;
+  line-height: 35px;
+  overflow: hidden;
+}
+.auiRowTable div a {
+	display:inline;
+}
+.auiRowTable .today .day {
+  font-weight: bold;
+}
+.auiRowTable tr:hover {
+  background: #f6f6f6;
+}
+.auiRowTable tr:hover td,
+.auiRowTable tr:hover th {
+  background: #f6f6f6;
+}
+.auiRowTable tr.unread td {
+  font-weight: bold;
+  color: black;
+}
+.auiRowTable .auiMTCheck {
+  width: 20px;
+}
+
+.auiRowTable.scheduleList {
+  border-bottom: solid 1px #ededed;
+}
+.auiRowTable.scheduleList td {
+  border-bottom: none;
+}
+
+.auiSTCaption{
+  width: 20%;
+}
+
+/***************************************************
+	auiMultiTable
+--------------------------------------------------*/
+.auiMultiTable {
+  border-collapse: collapse;
+}
+
+.auiMultiTable td {
+  padding: 8px 5px;
+}
+
+.auiMultiTable th {
+  background: none repeat scroll 0 0 #f0f0f0;
+  padding: 8px 5px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.auiMultiTable td {
+  border-bottom: 1px solid #ededed;
+}
+
+.wDays {
+  width: 35px;
+}
+
+.wType {
+  width: 60px;
+}
+
+.wTime {
+  width: 85px;
+}
+
+/***************************************************
+	auiDirectoryList
+--------------------------------------------------*/
+.auiDirectoryList {
+  margin-bottom: 0.8em;
+}
+.auiDirectoryList a {
+  display: block;
+  width: 100%;
+  min-height: 26px;
+  text-decoration: none;
+  overflow: hidden;
+}
+.auiDirectoryList a span {
+  cursor: pointer;
+}
+.auiDirectoryList a:hover {
+  background: #f6f6f6;
+}
+.auiDirectoryList a:hover span {
+  position: absolute;
+  padding-right: 5px;
+  color: #000;
+  background: #f6f6f6;
+}
+.auiDirectoryList .active {
+  font-weight: bold;
+  background: #f0f0f0;
+}
+.auiDirectoryList .active a:hover {
+  background: #f0f0f0;
+}
+.auiDirectoryList .active a:hover span {
+  background: #f0f0f0;
+}
+.auiDirectoryList .directory {
+  display: block;
+  line-height: 26px;
+  height: 26px;
+  padding-left: 5px;
+  overflow: hidden;
+}
+.auiDirectoryList .directory [class^="icon-"], .auiDirectoryList .directory [class*=" icon-"] {
+  color: #d2d2d2;
+  margin-right: 5px;
+  font-size: 16px;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+}
+
+.auiDirectoryList .d1 span {
+  margin-left: 0px;
+}
+
+.auiDirectoryList .d2 span {
+  margin-left: 10px;
+}
+
+.auiDirectoryList .d3 span {
+  margin-left: 20px;
+}
+
+.auiDirectoryList .d4 span {
+  margin-left: 30px;
+}
+
+.auiDirectoryList .d5 span {
+  margin-left: 40px;
+}
+
+.auiDirectoryList .d6 span {
+  margin-left: 50px;
+}
+
+.auiDirectoryList .d7 span {
+  margin-left: 60px;
+}
+
+.auiDirectoryList .d8 span {
+  margin-left: 70px;
+}
+
+.auiDirectoryList .d9 span {
+  margin-left: 80px;
+}
+
+.auiDirectoryList .d10 span {
+  margin-left: 90px;
+}
+
+.auiDirectoryList .d11 span {
+  margin-left: 100px;
+}
+
+.auiDirectoryList .d12 span {
+  margin-left: 110px;
+}
+
+.auiDirectoryList .d13 span {
+  margin-left: 120px;
+}
+
+.auiDirectoryList .d14 span {
+  margin-left: 130px;
+}
+
+.auiDirectoryList .d15 span {
+  margin-left: 140px;
+}
+
+.auiDirectoryList .d16 span {
+  margin-left: 150px;
+}
+
+.auiDirectoryList .d17 span {
+  margin-left: 160px;
+}
+
+.auiDirectoryList .d18 span {
+  margin-left: 170px;
+}
+
+.auiDirectoryList .d19 span {
+  margin-left: 180px;
+}
+
+.auiDirectoryList .d20 span {
+  margin-left: 190px;
+}
+
+/***************************************************
+	auiSakuin
+--------------------------------------------------*/
+.auiSakuin li {
+  float: left;
+  background: none;
+}
+
+.auiWidget .auiSakuin li {
+  width: 20%;
+}
+
+.auiSakuin li.first,
+.auiSakuin li.last {
+  float: none;
+  clear: both;
+}
+
+.auiSakuin li a {
+  padding: 0.5em 0;
+  text-align: center;
+  background: none;
+}
+
+.auiSakuin li a:hover {
+  background: #f6f6f6 none;
+}
+
+.auiSakuin li.active a {
+  background: #f0f0f0 none;
+}
+
+/***************************************************
+	auiScheduleWeekly
+--------------------------------------------------*/
+.auiScheduleWeek {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.auiScheduleWeek td {
+  width: 14.28571%;
+  border: solid 1px #d2d2d2;
+}
+.auiScheduleWeek .weekDay td {
+  text-align: center;
+}
+.auiScheduleWeek .dayTop, .auiScheduleWeek .dayBottom {
+  height: 17px;
+  line-height: 17px;
+}
+
+/***************************************************
+	auiCalendar
+--------------------------------------------------*/
+.auiCalendar {
+  width: 100%;
+  border-collapse: collapse;
+}
+.auiCalendar th {
+  font-weight: normal;
+  padding-bottom: 5px;
+}
+.auiCalendar th div {
+  line-height: 32px;
+}
+.auiCalendar td {
+  text-align: center;
+  font-size: 11px;
+  width: 26px;
+}
+.auiCalendar td a {
+  padding: 3px 1px;
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+.auiCalendar td a:hover {
+  background: #f0f0f0;
+}
+.auiCalendar .auiButton, .auiCalendar .auiSelectButton a, .auiSelectButton .auiCalendar a,
+.auiCalendar .auiSelectButtonSmall a,
+.auiSelectButtonSmall .auiCalendar a {
+  padding: 0 0.7em;
+}
+.auiCalendar .sunday {
+  background: none;
+  width: 25px;
+}
+.auiCalendar .saturday {
+  background: none;
+  width: 25px;
+}
+.auiCalendar .holiday {
+  background: none;
+}
+.auiCalendar .out a {
+  color: #999999;
+}
+.auiCalendar .today a {
+  background: #f0f0f0;
+}
+.auiCalendar .selected a {
+  padding: 2px 1px;
+  border: solid 1px #999999;
+}
+
+/***************************************************
+	Avatar
+--------------------------------------------------*/
+/* auiAvatarBlock ********************/
+.auiAvatarBlock {
+  text-align: center;
+}
+
+.auiAvatarBlock .name {
+  font-weight: bold;
+}
+
+/* auiAvatarList ********************/
+.auiAvatarList li a {
+  padding: 0.3em;
+  background: none;
+}
+
+.auiAvatarList li.active a {
+  background: #f0f0f0 none;
+}
+
+.auiAvatarList li a img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/***************************************************
+	auiBlogEntry
+--------------------------------------------------*/
+#auiBlogEntries {
+  padding-top: 1em;
+  border-top: solid 1px #ededed;
+}
+
+#auiBlogEntries .avatar {
+  float: left;
+}
+
+#auiBlogEntries .entry {
+  margin: 0 0 1em 0;
+  border-bottom: solid 1px #ededed;
+}
+
+.entry:first-child .entryHeader p {
+  margin-top: 0;
+}
+
+.entryBody {
+  margin-left: 40px;
+}
+
+#auiContentsArea .entryBody {
+  margin-left: 60px;
+  word-break: break-all;
+}
+#auiContentsArea .entryText {
+  font-size: 14px;
+}
+
+.entryHeader {
+  margin: 0 0 10px 0;
+}
+
+.entryFooter {
+  margin: 1em 0;
+}
+
+.dojoDndItem .entryHeader {
+  margin: 0 0 5px 0;
+}
+
+.dojoDndItem .entryFooter .entryText {
+  margin: 10px 0;
+}
+
+.dojoDndItem .entryFooter {
+  margin: 10px 0;
+  font-size: 11px;
+}
+
+.dojoDndItem .entryFooter .subCaption {
+  display: inline-block;
+}
+
+/***************************************************
+	auiMail
+--------------------------------------------------*/
+.auiMailSummaryExcerpt {
+  color: #999999;
+}
+
+/***************************************************
+	auiForm
+--------------------------------------------------*/
+.auiForm,
+form {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+form label {
+  vertical-align: middle;
+}
+
+input[type=text],
+input[type=password],
+textarea,
+select {
+  margin: 0;
+  vertical-align: middle;
+}
+
+input[type=radio],
+input[type=checkbox] {
+  position: relative;
+  vertical-align: middle;
+  top:-1px;
+}
+.dj_ie input[type=radio],
+.dj_ie input[type=checkbox] {
+	top:0;
+}
+
+textarea,
+select {
+  border: solid 1px silver;
+}
+
+input[type=text],
+input[type=password] {
+  height: 32px;
+  padding: 4px 2px;
+  vertical-align: middle;
+  border: 1px solid #d2d2d2;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  -webkit-appearance: none;
+}
+
+/*IE8Hack*/
+html > body input[type=text],
+html > body input[type=password] {
+  line-height/*\**/: 32px \9;
+  padding/*\**/: 0 2px \9;
+}
+
+select {
+  height: 32px;
+  padding: 5px;
+  max-width: 100%;
+}
+
+select[multiple="multiple"] {
+  height: auto;
+}
+#memberPopupDiv select[multiple="multiple"],
+#groupPopupDiv select[multiple="multiple"] {
+	height: 8em;
+}
+
+*:first-child + html select {
+  height: auto;
+ }
+
+select[multiple="multiple"] option {
+  padding-bottom: 1px;
+}
+
+form textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+input[type=text]:hover,
+input[type=text]:focus,
+input[type=password]:hover,
+input[type=password]:focus,
+select:hover,
+select:focus,
+textarea:hover,
+textarea:focus {
+  border: solid 1px #999999;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  height: auto;
+}
+
+.inlineCheckbox,
+.inlineRadio {
+  line-height: 1em;
+  margin-bottom: 1px;
+}
+
+.inlineLabel {
+  line-height: 1em;
+  vertical-align: baseline;
+}
+
+/* fileupload **************************/
+ul.attachments {
+  margin: 5px 0;
+}
+
+.attachments .deletebutton {
+  margin-left: 10px;
+  cursor: pointer;
+  text-decoration: underline;
+  color: #1b1b1b;
+}
+
+.attachments .deletebutton:hover {
+  text-decoration: none;
+  color: #ff9900;
+}
+
+.auiInputFileFrame {
+  height: 32px;
+  width: 142px;
+}
+
+#uploadContainer .auiButtonBold {
+  width: 142px;
+}
+
+.uploadText {
+  position: absolute\9;
+  top: 0\9;
+  right: 0\9;
+  bottom: 0\9;
+  left: 0\9;
+  *position: absolute;
+  *top: 0;
+  *right: 0;
+  *bottom: 0;
+  *left: 0;
+  margin: auto;
+  width: 100%;
+}
+
+.singleFile li {
+  background: none;
+  padding: 0;
+}
+
+/***************************************************
+	selectList
+--------------------------------------------------*/
+.selectListWrap .selectListHead {
+  border: 1px solid #d2d2d2;
+  padding: 5px;
+}
+.selectListWrap .selectListLeft {
+  width: 100%;
+}
+.selectListWrap .selectListRight {
+  width: 100%;
+}
+.selectListWrap .selectList {
+  height: 170px;
+  overflow: auto !important;
+  border-left: 1px solid #d2d2d2;
+  border-right: 1px solid #d2d2d2;
+  border-bottom: 1px solid #d2d2d2;
+  width: 100%;
+  margin: 0;
+}
+.selectListWrap .selectList table .auiSelectButton {
+  background-color: transparent;
+}
+.selectListWrap .selectList table tr:hover, .selectListWrap .selectList table tr.select:hover {
+  background: #f0f0f0;
+  cursor: pointer;
+}
+.selectListWrap .selectList table tr.select {
+  background: #f6f6f6;
+}
+.selectListWrap .selectList table td {
+  border-bottom: 1px solid #ededed;
+  border-top: none;
+}
+.selectListWrap .selectList table td .avatar {
+  width: auto;
+}
+.selectListWrap .selectList label {
+  padding: 5px;
+  display: block;
+}
+.selectListWrap .selectList label:hover {
+  background: #f0f0f0;
+}
+
+/***************************************************
+	auiSubmenu
+--------------------------------------------------*/
+.auiSubmenu {
+  padding-right: 5px;
+}
+
+.auiSubmenu li {
+  padding: 0;
+  background: none;
+}
+
+.auiSubmenu li span {
+  display: block;
+  line-height: 1.8em;
+  padding: 0.3em 0 0.3em 18px;
+  background: url("../images/common/li_icon.gif") no-repeat scroll 5px 1em;
+}
+
+.auiSubmenu li a {
+  display: block;
+  line-height: 1.8em;
+  padding: 0.3em 0 0.3em 18px;
+  text-decoration: none;
+  background: url("../images/common/li_icon.gif") no-repeat scroll 5px 1em;
+}
+
+.auiSubmenu li a:hover {
+  color: #000;
+  background: #f6f6f6 url("../images/common/li_icon.gif") no-repeat scroll 5px 1em;
+}
+
+.auiSubmenu li.active a {
+  font-weight: bold;
+  background: #f0f0f0 url("../images/common/li_icon.gif") no-repeat scroll 5px 1em;
+}
+
+.auiSubmenu li ul {
+  margin: 0;
+}
+
+.auiSubmenu li li a,
+.auiSubmenu li li a:hover,
+.auiSubmenu li li.active a {
+  padding: 0.3em 0 0.3em 36px;
+  background-position: 23px 1em;
+}
+
+/***************************************************
+	timeline
+--------------------------------------------------*/
+#timelineOuter,
+.timelineOuter {
+  position: relative;
+}
+#timelineOuter .message,
+.timelineOuter .message {
+  margin: 0;
+  padding: 10px 0 0;
+  clear: both;
+  border-top: 1px solid #ededed;
+}
+#timelineOuter .message:first-child,
+#timelineOuter .message.first,
+.timelineOuter .message:first-child,
+.timelineOuter .message.first {
+  border-top: none !important;
+}
+#timelineOuter .on,
+.timelineOuter .on {
+  border-top: 1px solid #999999;
+}
+#timelineOuter #inputField,
+#timelineOuter .inputField,
+#timelineOuter .outer,
+.timelineOuter #inputField,
+.timelineOuter .inputField,
+.timelineOuter .outer {
+  border: 1px #d2d2d2 solid;
+  background: #fff;
+  overflow: hidden;
+}
+#timelineOuter #inputField,
+#timelineOuter .inputField,
+.timelineOuter #inputField,
+.timelineOuter .inputField {
+  margin-bottom: 15px;
+  background: transparent;
+}
+#timelineOuter .outer,
+.timelineOuter .outer {
+  padding: 3px;
+  margin: 0 0 5px 0;
+}
+#timelineOuter textarea,
+.timelineOuter textarea {
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  font-size: 14px;
+}
+#timelineOuter textarea:focus,
+.timelineOuter textarea:focus {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+#timelineOuter textarea.elastic,
+.timelineOuter textarea.elastic {
+  width: 100%;
+  overflow: hidden;
+  resize: none;
+  outline: 0;
+  line-height: 1.38;
+  height: 21px;
+  padding-right: 1%;
+  -webkit-appearance: caret;
+}
+
+#timelineOuter .timeline .commentField textarea {
+ font-size:13px;
+}
+#timelineOuter .auiSummaryMeta{
+  margin: 0;
+}
+.avatar a {
+  text-decoration:none !important;
+}
+
+.tlInputMention {
+  padding: 4px;
+}
+
+.tlInputAttachment {
+  border-top: dotted 1px #d2d2d2;
+  padding: 10px;
+}
+
+.tlInputAttachmentTitle {
+  font-weight: bold;
+}
+
+.tlInputControls {
+  border-top: solid 1px #ededed;
+  padding: 4px;
+  background: #f6f6f6;
+}
+.tlInputControls .floatRight li {
+  float: left;
+  background: none;
+  padding: 0 0 0 5px;
+}
+.tlInputControls .floatRight li:first-child {
+  padding: 0;
+}
+.tlInputControls .floatRight .indicatorglay {
+  display: inline-block;
+}
+.tlInputControls ul.attachments {
+  float: left;
+  margin: 0;
+}
+.tlInputControls ul.attachments > li {
+  margin-left: 5px;
+}
+
+.tlDisplayChanger {
+  position: relative;
+  height: 5px;
+  line-height: 15px;
+  border-top: 1px solid #ededed;
+  z-index: 1;
+}
+.tlDisplayChanger .btn {
+  background: #fff;
+  padding: 0 3px;
+  position: absolute;
+  top: -9px;
+  right: 15px;
+}
+.tlDisplayChanger .btn a {
+  font-size: 11px;
+}
+.tlDisplayChanger .btn span {
+  height: 20px;
+  line-height: 20px;
+}
+.tlDisplayChanger .indicator {
+  vertical-align: middle;
+  float: left;
+  margin: 1px 0;
+}
+.tlDisplayChanger .menubar {
+  top: 10px;
+  right: 0;
+  width: 12em;
+}
+
+.tlDisplayGroup {
+  cursor: pointer;
+  /*IE7*/
+}
+
+.timeline {
+  position: relative;
+}
+.timeline .avatar {
+  position: absolute;
+}
+.timeline .messageContents {
+  margin-left: 60px;
+  /*margin-bottom: 10px;*/
+}
+.timeline .messageContents .tlClipBoard {
+  border: solid 1px #ededed;
+  margin: 10px 0 5px;
+  padding: 10px;
+}
+.timeline .messageContents .time {
+  margin-bottom: 10px;
+}
+.timeline .commentsBorder, .timeline .comments .message, .timeline .commentCaption, .timeline .commentInputDummy, .timeline .commentField {
+  border-top: solid 1px #fff !important;
+}
+.timeline .comments {
+  margin: 0 0 10px 60px;
+  background: #f6f6f6;
+  overflow: hidden;
+}
+.timeline .comments .messageContents {
+  margin-left: 42px;
+}
+.timeline .comments .messageContents .time {
+  margin-bottom: 0;
+}
+.timeline .comments .messageContents .body {
+  font-size: 13px;
+}
+.timeline .comments .message {
+  margin: 0;
+  padding: 5px !important;
+  border: none;
+}
+.timeline .message .comments {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.timeline .message .comments .avatar {
+  margin: 0 10px 0 0;
+}
+.timeline .commentCaption {
+  padding: 3px 5px;
+  font-size: 11px;
+}
+.timeline .commentInputDummy {
+  padding: 5px;
+}
+.timeline .commentInputDummy span {
+  display: block;
+  padding: 5px;
+  border: 1px #d2d2d2 solid;
+  color: #d2d2d2;
+  cursor: text;
+  background: #fff;
+}
+.timeline .commentField {
+  padding: 5px;
+}
+.timeline .commentField form {
+  margin-left: 42px;
+}
+.timeline .timeline {
+  width: 100%;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.messageContents .name {
+  font-weight: bold;
+  padding-right: 5px;
+}
+.messageContents .body {
+  padding: 5px 0;
+  font-size: 14px;
+}
+.messageContents .body .more {
+  margin: 0;
+}
+.messageContents .time {
+  font-size: 11px;
+  color: #434343;
+}
+.messageContents .time [class^="icon-"] {
+  vertical-align: middle;
+}
+.messageContents .time [class="icon-star"] {
+  color: #ffc40d;
+}
+
+.tlActivity,
+.tlActivity a {
+  color: #666666;
+  font-size: 11px;
+}
+
+.tlActivity .messageContents {
+  display: table-cell;
+  padding-left: 0px !important;
+  line-height: 20px;
+}
+.tlActivity .messageContents div {
+  display: inline;
+  padding: 0;
+}
+
+/* tlImageBox */
+.tlImageBlock {
+  margin: 10px 0;
+}
+
+.tlImageBlock a {
+  display: inline-block;
+  margin: 0 5px 5px 0;
+}
+
+.tlImageBlock img,
+.thumbBlock img {
+  max-width: 200px;
+  max-height: 200px;
+  height: auto;
+  padding: 4px;
+  border: solid 1px silver;
+}
+
+.tlImageBlock a:hover img,
+.thumbBlock a:hover img {
+  border: solid 1px #ff9900;
+}
+
+/* clipBloard */
+.tlClipBoard {
+  font-size: 13px;
+}
+
+.tlClipImage {
+  float: left;
+  max-width: 90px;
+  max-height: 90px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.tlClipImage img {
+  max-width: 90px;
+  max-height: 90px;
+  width: auto;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+}
+
+.tlClipContents {
+  display: table-cell;
+}
+
+.tlClipUrl {
+  font-size: 11px;
+}
+
+.tlClipBody {
+  padding-top: 5px;
+  color: #666666;
+}
+
+.name .avatar {
+  float: left;
+  width: 23px;
+  height: 23px;
+  margin: 0 4px 0 0;
+}
+
+#timelineOuter .searchClearOuter,
+#timelineOuter .newMessage,
+.timelineOuter .newMessage,
+.timelineOuter .searchClearOuter {
+  background: #f6f6f6;
+  text-align: center;
+  /*border: 1px #d2d2d2 solid;*/
+  margin-bottom: 0px;
+}
+
+#timelineOuter .newMessage a,
+#timelineOuter .readMore a,
+#timelineOuter .searchClearOuter a,
+.timelineOuter .newMessage a,
+.timelineOuter .readMore a,
+.timelineOuter .searchClearOuter a  {
+  display: block;
+  padding: 5px !important;
+  text-decoration: none;
+}
+#timelineOuter .newMessage,
+#timelineOuter .searchClearOuter,
+#timelineOuter .loader{
+  margin-top: 5px;
+}
+.searchClearOuter .indicatorglay{
+  position: absolute;
+  right: 0;
+}
+#timelineOuter .newMessage a,
+.searchClear {
+  color: #666 !important;
+  line-height: inherit;
+}
+
+.searchClear [class^="icon-"], .searchClear [class*=" icon-"] {
+  color: #666 !important;
+}
+#timelineOuter .newMessage a:hover,
+.searchClear:hover [class^="icon-"], .searchClear:hover [class*=" icon-"] {
+  color: #f90 !important;
+}
+
+.timeline .readMore {
+  margin: 10px 0;
+  background: #f0f0f0;
+  text-align: center;
+  border: 1px #d2d2d2 solid;
+}
+
+.timeline .message > .more {
+  line-height: 1.6;
+  margin: 0 0 10px 60px;
+}
+
+.timeline .text_exposed_show.ellipsis, .timeline .hdPages a.text_exposed_show.name, .hdPages .timeline a.text_exposed_show.name, .timeline .hdSearch .dropdown_menu .text_exposed_show.date, .hdSearch .dropdown_menu .timeline .text_exposed_show.date, .timeline .hdSearch .dropdown_list ul .text_exposed_show.date, .hdSearch .dropdown_list ul .timeline .text_exposed_show.date, .timeline .dropdown_list .hdSearch ul .text_exposed_show.date, .dropdown_list .hdSearch ul .timeline .text_exposed_show.date, .timeline ul.hdTools .text_exposed_show.name, ul.hdTools .timeline .text_exposed_show.name, .timeline .messageSummary .text_exposed_show.date, .messageSummary .timeline .text_exposed_show.date, .timeline .messageSummary .text_exposed_show.name, .messageSummary .timeline .text_exposed_show.name, .timeline .messageSummary .text_exposed_show.latest, .messageSummary .timeline .text_exposed_show.latest, .timeline .messageUserlist .text_exposed_show.name, .messageUserlist .timeline .text_exposed_show.name, .timeline #auiLauncher ul.launcher li a.text_exposed_show, #auiLauncher ul.launcher li .timeline a.text_exposed_show,
+.timeline #auiLauncher ul.setting li a.text_exposed_show,
+#auiLauncher ul.setting li .timeline a.text_exposed_show, .timeline .auiTabs .tab > li a.text_exposed_show, .auiTabs .tab > li .timeline a.text_exposed_show,
+.timeline .message .more.opened {
+  display: none;
+}
+
+.iconLike,
+.iconComment {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  background-image: url(../images/icon/auiIconSprites20150318.png);
+  background-repeat: no-repeat;
+}
+
+.iconLike {
+  background-position: -2px -594px;
+}
+
+.iconComment {
+  background-position: -2px -609px;
+}
+
+/* table Class */
+.disabled th, .disabled td {
+  background: #f6f6f6;
+  color: #666666;
+}
+
+.disabled a {
+  color: #666666;
+}
+
+/***************************************************
+	dijitCalendar Plus
+--------------------------------------------------*/
+.dijitCalendarTimeContainer {
+  text-align: center;
+  padding: 5px 0;
+  border-bottom: solid 1px silver;
+  -webkit-box-shadow: 0 1px 0 #f9f9f9;
+  -moz-box-shadow: 0 1px 0 #f9f9f9;
+  box-shadow: 0 1px 0 #f9f9f9;
+}
+
+/***************************************************
+	auiFilter
+--------------------------------------------------*/
+.auiFilter {
+  position: relative;
+}
+
+.auiFilter form {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.auiFilter .auiButton, .auiFilter .auiSelectButton a, .auiSelectButton .auiFilter a,
+.auiFilter .auiSelectButtonSmall a,
+.auiSelectButtonSmall .auiFilter a {
+  float: left;
+  width: 16px;
+}
+
+.filters {
+  color: #999999;
+  line-height: 30px;
+  cursor: text;
+}
+
+.filterTip {
+  display: inline-block;
+  background: #f0f0f0;
+  color: #000;
+  margin: 0 2px 4px !important;
+  padding: 0 5px;
+  height: 32px !important;
+  line-height: 33px !important;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.auiSearch .filterTip {
+  margin: 2px !important;
+}
+
+.filterInputField .filterTip {
+  height: 26px !important;
+  line-height: 26px !important;
+  padding-right: 22px;
+}
+
+.filterTip > span {
+  display: inline-block;
+  max-width: 16em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.filters a {
+  text-decoration: none;
+}
+
+.filters a:hover span {
+  color: #000;
+}
+
+.filterTip > a {
+  position: absolute;
+  margin: 6px -5px 0 5px;
+}
+
+*:first-child + html .filterTip > a {
+  margin-top: 5px;
+}
+
+.filterInputField {
+  float: left;
+  position: relative;
+  border: solid 1px #d2d2d2;
+  height: 30px;
+  background: #ffffff;
+  overflow: hidden;
+}
+.filterInputField:hover,
+.filterInputField.hover,
+.focus .filterInputField {
+  border: solid 1px #999999;
+}
+
+*:first-child + html .filterInputField {
+  overflow: hidden;
+}
+
+.filterInputField .filters {
+  position: absolute;
+  height: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.filterInputField input[type=text] {
+  margin: 0 !important;
+  height: 30px;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.filterInputField .menubar.multi {
+  left: auto;
+  right: 0;
+}
+
+.filterDropDrawer {
+  position: absolute;
+  display: block;
+  right: 0;
+  width: 24px;
+  height: 26px;
+  top: 2px;
+  -webkit-border-radius: 0 2px 2px 0;
+  -moz-border-radius: 0 2px 2px 0;
+  -ms-border-radius: 0 2px 2px 0;
+  -o-border-radius: 0 2px 2px 0;
+  border-radius: 0 2px 2px 0;
+  -webkit-box-shadow: -3px 0 3px 0px white;
+  -moz-box-shadow: -3px 0 3px 0px white;
+  box-shadow: -3px 0 3px 0px white;
+  vertical-align: middle;
+  background: #ffffff;
+  text-decoration: none;
+}
+.filterDropDrawer i[class*=icon-] {
+  line-height: 26px;
+  margin-left: 7px;
+}
+
+.filterDropDrawer i {
+  cursor: pointer;
+  margin: 6px 0 0 2px;
+}
+
+.filterInputField input[type=text] {
+  max-width: 500px;
+  padding-right: 20px;
+}
+
+.filterInputField .menubar.multi {
+  top: 30px;
+}
+
+.auiFilter .auiSearch .auiButtonSearch {
+  margin-left: 5px;
+}
+
+.filters.colors .filterTip {
+  color: white !important;
+  cursor: default;
+}
+
+.filters.colors .filterTip > a {
+  color: white !important;
+  position: static;
+  margin: 0 0 0 6px;
+}
+
+/***************************************************
+	auiScheduleList
+--------------------------------------------------*/
+.auiScheduleList {
+  width: 100%;
+}
+
+.auiScheduleList,
+.auiScheduleList ul {
+  width: 100%;
+}
+
+.auiScheduleList li {
+  clear: both;
+  width: 100%;
+  background: none;
+  padding: 0;
+  border-top: solid 1px #ededed;
+  overflow: hidden;
+}
+
+.auiScheduleList li:first-child {
+  border-top: none;
+}
+
+.auiScheduleList li ul {
+  margin: 0;
+}
+
+.auiScheduleList .day {
+  background: #eee;
+  padding: 8px 5px;
+  font-weight: bold;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.auiScheduleList .today .day {
+  background: #999999;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.auiScheduleList a {
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 36px;
+  height: 36px;
+}
+
+.auiScheduleList span {
+  line-height: 36px;
+  height: 36px;
+}
+
+.auiSlHour {
+  position: absolute;
+  width: 3em;
+  padding-right: 10px;
+  text-align: right;
+}
+
+.auiSlTitle {
+  margin-left: 4em;
+}
+
+.auiSlBody {
+  color: #999999;
+}
+
+/***************************************************
+	auiWideList
+--------------------------------------------------*/
+.auiWideList {
+  margin: 6px 0;
+  margin-right: -5px;
+  margin-left: -5px;
+  border-top: solid 1px #ededed;
+}
+.auiWideList .row {
+  position: relative;
+  padding: 7px 5px 6px 5px;
+  border-bottom: solid 1px #ededed;
+  overflow: hidden;
+}
+.auiWideList .row:hover {
+  background: #f6f6f6;
+}
+.auiWideList .read {
+  background: #f6f6f6;
+}
+.auiWideList .checked {
+  background: #d9e7fd !important;
+}
+.auiWideList div {
+  cursor: pointer;
+}
+
+.auiWLCaption {
+  height: 24px;
+  line-height: 24px;
+  font-size: 14px;
+  color: black;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.auiWLCols,
+.auiWLRows {
+  color: #333333;
+}
+
+.read .auiWLCols,
+.read .auiWLRows {
+  color: #999999;
+}
+
+.auiWLRows div {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.auiWLCols div {
+  display: inline;
+  margin-right: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.auiWLDate {
+  float: right;
+  height: 24px;
+  line-height: 24px;
+  margin-left: 5px;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.auiWLCover {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.auiWLCover a {
+  display: block;
+  height: 100%;
+  background: white \9;
+  /*IE8*/
+  -ms-filter: "alpha(opacity=0)";
+  /*IE8*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.auiWideList.useCheck .row {
+  padding: 7px 5px 6px 30px;
+}
+.auiWideList.useCheck .auiWLCover {
+  margin-left: 30px;
+}
+
+.auiWLCheck {
+  float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.auiWLCheck label {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 100%;
+  text-align: center;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.auiWLCheck input[type=checkbox] {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  left: 5px\9;
+  margin-top: -7px;
+}
+
+.auiWLCheck input {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.auiMailList .auiWLCaption {
+  font-weight: bold;
+}
+
+.auiMailList .read .auiWLCaption {
+  font-weight: normal;
+}
+
+/***************************************************
+	auiInfo
+--------------------------------------------------*/
+.auiInfo {
+  background: #f0f0f0;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  min-width: 480px;
+  margin: 0 5px 5px;
+}
+
+.auiInfo .inner {
+  position: relative;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.auiInfoClose {
+  float: right;
+  width: 15px;
+}
+
+.auiInfoClose a {
+  display: block;
+  padding: 2px;
+  text-decoration: none !important;
+}
+
+.auiInfoTitle {
+  float: left;
+  width: 160px;
+}
+
+.auiInfoTitle i {
+  color: #999999;
+}
+
+.auiInfoBody {
+  border-left: solid 1px #d2d2d2;
+  padding-left: 10px;
+  margin-left: 170px;
+  margin-right: 25px;
+}
+
+/***************************************************
+	auiBlankBox
+--------------------------------------------------*/
+.auiBlankBox {
+  padding: 50px 10px;
+  text-align: center;
+}
+
+/***************************************************
+	auiUserChecklist
+--------------------------------------------------*/
+.auiCheckList {
+  margin: 5px 0;
+  overflow: auto !important;
+}
+.auiCheckList li {
+  display: block;
+  float: left;
+  padding: 0;
+  background: none;
+}
+.auiCheckList label {
+  display: block;
+  padding: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.auiCheckList label:hover {
+  background: #f0f0f0;
+}
+.auiCheckList .avatar {
+  width: 23px;
+  height: 23px;
+  vertical-align: middle;
+  margin: 0 5px;
+}
+
+.auiCL2 li {
+  width: 50%;
+}
+
+.auiCL3 li {
+  width: 33.3%;
+}
+
+/***************************************************
+	auiDispChanger
+--------------------------------------------------*/
+.auiDispChanger {
+  text-align: center;
+  background: #d2d2d2;
+  background: #333333;
+}
+.auiDispChanger a {
+  color: white;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.8);
+}
+.auiDispChanger .icon {
+  display: inline-block;
+  padding: 10px;
+  vertical-align: middle;
+  text-align: center;
+}
+.auiDispChanger .icon i {
+  display: block;
+  width: 20px;
+  font-size: 20px;
+  line-height: 20px;
+  color: #fff !important;
+}
+
+/***************************************************
+	auiRowList
+--------------------------------------------------*/
+.auiRowList {
+  text-align: center;
+}
+.auiRowList li {
+  display: inline-block;
+  text-align: center;
+  background-image: none;
+  padding: 0 10px;
+}
+.auiRowList .section {
+  display: block;
+  margin: 5px 0;
+}
+.auiRowList label {
+  display: block;
+}
+
+/***************************************************
+	auiWebdbTable
+--------------------------------------------------*/
+.auiWebdbTable .thDate {
+  width: 9em;
+}
+
+/***************************************************
+	webdbFelds
+--------------------------------------------------*/
+.webdbFelds th {
+  text-align: left;
+}
+.webdbFelds input[type=text] {
+  width: 100%;
+}
+
+.webdbFieldType {
+  width: 120px;
+}
+.webdbFieldType select {
+  width: 120px;
+}
+
+.webdbFieldCheck {
+  text-align: center;
+  width: 50px;
+}
+.webdbFieldCheck label {
+  width: 100%;
+  display: block;
+}
+.webdbFieldCheck label input[type=radio],
+.webdbFieldCheck label input[type=checkbox] {
+  height: 32px;
+  cursor: pointer;
+}
+
+/***************************************************
+	auiWikiContent
+--------------------------------------------------*/
+.auiWikiContent {
+  font-size: 14px;
+}
+.auiWikiContent h1, .auiWikiContent h2, .auiWikiContent h3 {
+  margin: 1em 0 !important;
+}
+.auiWikiContent h1 {
+  font-size: large;
+  border-bottom: solid 1px #d2d2d2;
+}
+.auiWikiContent h2 {
+  font-size: larger;
+  border-bottom: solid 1px #d2d2d2;
+}
+.auiWikiContent h3 {
+  border-bottom: dotted 1px #d2d2d2;
+}
+.auiWikiContent p {
+  margin: 1em 0;
+}
+.auiWikiContent ul {
+  margin: 1em;
+}
+.auiWikiContent ol {
+  margin: 1em 1em 1em 2em;
+}
+.auiWikiContent table {
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+.auiWikiContent th, .auiWikiContent td {
+  border: solid 1px #d2d2d2 !important;
+  padding: 5px;
+}
+.auiWikiContent hr {
+  margin: 20px 0;
+}
+.auiWikiContent .wikiNew {
+  color: #ff9900;
+}
+
+.wikiPreview {
+  border: solid 1px #d2d2d2;
+  background: #f6f6f6;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/***************************************************
+	project
+--------------------------------------------------*/
+#gantt_task {
+  float: left;
+  border: solid 1px #d2d2d2;
+  border-top: none;
+}
+#gantt_task > table th {
+  height: 40px;
+  border-top: solid 1px #d2d2d2;
+  border-bottom: solid 1px #d2d2d2;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#gantt_task > table td {
+  height: 30px;
+  padding: 0 5px;
+  border-top: solid 1px #ededed;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#gantt_task > table td > div {
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+tr:first-child #gantt_task > table td {
+  border-top: none;
+}
+
+#gantt_table {
+  border-bottom: solid 1px #d2d2d2;
+}
+
+#gantt_area {
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+#gantt_area > div {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+#gantt_area td {
+  table-layout: fixed;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#gantt_area .gantt_area_month td,
+#gantt_area .gantt_area_day td {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  font-size: 10px;
+  border: solid 1px #d2d2d2;
+  border-left: none;
+  text-align: center;
+}
+#gantt_area .gantt_area_day td div {
+  margin-left: -1px;
+}
+#gantt_area .gantt_area_cell td {
+  text-align: center;
+  font-size: 8px;
+  height: 30px;
+  border-right: 1px solid #d2d2d2;
+}
+#gantt_area .gantt_area_month td.today,
+#gantt_area .gantt_area_day td.today,
+#gantt_area .gantt_area_cell td.today {
+  border-right: solid 1px #ff3333;
+}
+#gantt_area .gantt_tip {
+  position: absolute;
+  height: 10px;
+  font-size: 10px;
+  border: 1px solid #999999;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #f0f0f0;
+  z-index: 1;
+}
+#gantt_area .gantt_tip > div {
+  width: 0%;
+  height: 100%;
+  background: #999999;
+}
+#gantt_area .gantt_link {
+  cursor: pointer;
+  position: absolute;
+  font-size: 10px;
+  height: 10px;
+  line-height: 10px;
+  z-index: 4;
+}
+#gantt_area .gantt_link span {
+  display: block;
+  position: absolute;
+  width: 30px;
+  right: -35px;
+  height: 10px;
+  line-height: 10px;
+  padding-left: 5px;
+  margin: 0;
+}
+/***************************************************
+	txtIcon
+--------------------------------------------------*/
+.txtIcon {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: text-bottom;
+  background-color: #999;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 12px;
+  height: 16px;
+  padding: 0;
+  text-align: center;
+  width: 16px;
+  line-height: 16px;
+}
+
+/***************************************************
+	auiIcon
+--------------------------------------------------*/
+.auiIcon {
+  display: block;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  vertical-align: middle;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  background-image: url(../images/icon/auiIconSprites20150318.png);
+  background-repeat: no-repeat;
+}
+.off .auiIcon {
+  background-image: url(../images/icon/auiIconSpritesGray20150709.png);
+}
+.off a:hover .auiIcon {
+  background-image: url(../images/icon/auiIconSprites20150318.png);
+}
+
+.auiIcon span {
+  display: none;
+}
+
+a.auiIcon:hover {
+  background-color: #999999;
+}
+
+.auiIconClear {
+  background-position: 16px 0;
+}
+
+.auiIconSetting {
+  background-position: 0px 0px;
+  height: 17px;
+}
+
+.auiIconSetting_w {
+  background-position: 0px -16px;
+  height: 17px;
+}
+
+a.auiIconSetting:hover {
+  background-position: 0px -16px;
+}
+
+.auiIconFile {
+  background-position: 0px -32px;
+}
+
+.auiIconFile_w {
+  background-position: 0px -48px;
+}
+
+a.auiIconFile:hover {
+  background-position: 0px -48px;
+}
+
+.auiIconUser {
+  background-position: 0px -64px;
+}
+
+.auiIconUser_w {
+  background-position: 0px -80px;
+}
+
+a.auiIconUser:hover {
+  background-position: 0px -80px;
+}
+
+.auiIconCreate {
+  background-position: 0px -96px;
+}
+
+.auiIconCreate_w {
+  background-position: 0px -112px;
+}
+
+a.auiIconCreate:hover {
+  background-position: 0px -112px;
+}
+
+.auiIconClock {
+  background-position: 0px -128px;
+}
+
+.auiIconClock_w {
+  background-position: 0px -144px;
+}
+
+a.auiIconClock:hover {
+  background-position: 0px -144px;
+}
+
+.auiIconCalendar {
+  background-position: 0px -160px;
+}
+
+.auiIconCalendar_w {
+  background-position: 0px -176px;
+}
+
+a.auiIconCalendar:hover {
+  background-position: 0px -176px;
+}
+
+.auiIconLock {
+  background-position: 0px -192px;
+}
+
+.auiIconLock_w {
+  background-position: 0px -208px;
+}
+
+a.auiIconLock:hover {
+  background-position: 0px -208px;
+}
+
+.auiIconReload {
+  background-position: 0px -224px;
+}
+
+.auiIconReload_w {
+  background-position: 0px -240px;
+}
+
+a.auiIconReload:hover {
+  background-position: 0px -240px;
+}
+
+.auiIconPrint {
+  background-position: 0px -256px;
+}
+
+a.auiIconPrint:hover {
+  background-position: 0px -256px;
+}
+
+.auiIconDelete {
+  background-position: 0px -272px;
+}
+
+.auiIconDelete_w {
+  background-position: 0px -288px;
+}
+
+a.auiIconDelete:hover {
+  background-position: 0px -288px;
+}
+
+.auiIconPlus {
+  background-position: 0px -304px;
+}
+
+.auiIconPlus_w {
+  background-position: 0px -320px;
+}
+
+a.auiIconPlus:hover {
+  background-position: 0px -320px;
+}
+
+.auiIconMinus {
+  background-position: 0px -336px;
+}
+
+.auiIconMinus_w {
+  background-position: 0px -352px;
+}
+
+a.auiIconMinus:hover {
+  background-position: 0px -352px;
+}
+
+.auiIconArwLeft {
+  background-position: 0px -368px !important;
+}
+
+.auiIconArwLeft_w {
+  background-position: 0px -384px !important;
+}
+
+a.auiIconArwLeft:hover {
+  background-position: 0px -384px !important;
+}
+
+.auiIconArwRight {
+  background-position: 0px -400px !important;
+}
+
+.auiIconArwRight_w {
+  background-position: 0px -416px !important;
+}
+
+a.auiIconArwRight:hover {
+  background-position: 0px -416px !important;
+}
+
+.auiIconArwBottom {
+  background-position: 0px -432px !important;
+}
+
+.auiIconArwBottom_w {
+  background-position: 0px -448px !important;
+}
+
+a.auiIconArwBottom:hover {
+  background-position: 0px -448px !important;
+}
+
+.auiIconArwTop {
+  background-position: 0px -464px !important;
+}
+
+.auiIconArwTop_w {
+  background-position: 0px -480px !important;
+}
+
+a.auiIconArwTop:hover {
+  background-position: 0px -480px !important;
+}
+
+.auiIconImage {
+  background-position: 0px -496px;
+}
+
+.auiIconImage_w {
+  background-position: 0px -512px;
+}
+
+a.auiIconImage:hover {
+  background-position: 0px -512px;
+}
+
+.auiIconUsers {
+  background-position: 0px -528px;
+}
+
+.auiIconUsers_w {
+  background-position: 0px -544px;
+}
+
+a.auiIconUsers:hover {
+  background-position: 0px -544px;
+}
+
+.auiIconSearch {
+  background-position: 0px -560px;
+}
+
+.auiIconSearch_w {
+  background-position: 0px -576px;
+}
+
+a.auiIconSearch:hover {
+  background-position: 0px -576px;
+}
+
+.auiIconTmpreserve {
+  background-position: 0px -688px;
+  width: 13px;
+}
+
+a.auiIconTmpreserve:hover {
+  background-position: 0px -688px;
+}
+.termScheduleDivNameDiv .auiIconTmpreserve {background-position: 0px -816px; margin-top: 1px !important;}
+.termScheduleDivNameDiv .auiIconTmpreserve:hover {background-position: 0px -816px;}
+
+.auiIconOverlap {
+  background-position: 0px -704px;
+  width: 12px;
+}
+/* IE11用記述 */
+@media all and (-ms-high-contrast:none){
+  /* 仮 */
+  *::-ms-backdrop, .auiIconTmpreserve,
+  *::-ms-backdrop, .off .auiIconTmpreserve,
+  *::-ms-backdrop, .off a:hover .auiIconTmpreserve{
+    height: 13px;
+    background-repeat: no-repeat;
+    background-size: 100% !important;
+    background-position-x: 0 !important;
+    background-position-y: 0 !important;
+    /*background-position-x: -0.05px !important;*/
+    /*background-position-y: -0.05px !important;*/
+  }
+  *::-ms-backdrop, .off .auiIconTmpreserve{
+    background-image: url("../images/icon/auiIconTmpreserve_off.png") !important;
+  }
+  *::-ms-backdrop, .auiIconTmpreserve,
+  *::-ms-backdrop, .off a:hover .auiIconTmpreserve{
+    background-image: url("../images/icon/auiIconTmpreserve.png") !important;
+  }
+  /* 重複*/
+  *::-ms-backdrop, .auiIconOverlap,
+  *::-ms-backdrop, .off .auiIconOverlap,
+  *::-ms-backdrop, .off a:hover .auiIconOverlap{
+    height: 13px;
+    background-repeat: no-repeat;
+    background-size: 100% !important;
+    background-position-x: 0 !important;
+    background-position-y: 0 !important;
+    /*background-position-x: -0.05px !important;*/
+    /*background-position-y: -0.05px !important;*/
+  }
+  *::-ms-backdrop, .off .auiIconOverlap {
+    background-image: url("../images/icon/auiIconOverlap_off.png") !important;
+  }
+  *::-ms-backdrop, .auiIconOverlap,
+  *::-ms-backdrop, .off a:hover .auiIconOverlap {
+    background-image: url("../images/icon/auiIconOverlap.png") !important;
+  }
+  /* 繰り返し */
+  *::-ms-backdrop, .auiIconRepeat,
+  *::-ms-backdrop, .off .auiIconRepeat,
+  *::-ms-backdrop, .off a:hover .auiIconRepeat{
+    height: 13px;
+    background-repeat: no-repeat;
+    background-size: 100% !important;
+    background-position-x: 0 !important;
+    background-position-y: 0 !important;
+    /*background-position-x: -0.05px !important;*/
+    /*background-position-y: -0.05px !important;*/
+  }
+  *::-ms-backdrop, .off .auiIconRepeat{
+    background-image: url("../images/icon/auiIconRepeat_off.png") !important;
+  }
+  *::-ms-backdrop, .auiIconRepeat,
+  *::-ms-backdrop, .off a:hover .auiIconRepeat{
+    background-image: url("../images/icon/auiIconRepeat.png") !important;
+  }
+  /* 鍵 */
+  *::-ms-backdrop, .auiIconSecret,
+  *::-ms-backdrop, .off .auiIconSecret,
+  *::-ms-backdrop, .off a:hover .auiIconSecret{
+    height: 13px;
+    background-repeat: no-repeat;
+    background-size: 100% !important;
+    background-position-x: 0 !important;
+    background-position-y: 0 !important;
+    /*background-position-x: -0.05px !important;*/
+    /*background-position-y: -0.05px !important;*/
+  }
+  *::-ms-backdrop, .off .auiIconSecret{
+    background-image: url("../images/icon/auiIconSecret_off.png") !important;
+  }
+  *::-ms-backdrop, .auiIconSecret,
+  *::-ms-backdrop, .off a:hover .auiIconSecret{
+    background-image: url("../images/icon/auiIconSecret.png") !important;
+  }
+}
+
+a.auiIconOverlap:hover {
+  background-position: 0px -704px;
+}
+.termScheduleDivNameDiv .auiIconOverlap {background-position: 0px -832px; margin-top: 1px !important;}
+.termScheduleDivNameDiv .auiIconOverlap:hover {background-position: 0px -832px;}
+
+.auiIconRepeat {
+  background-position: 0px -720px;
+  width: 13px;
+}
+
+a.auiIconRepeat:hover {
+  background-position: 0px -720px;
+}
+.termScheduleDivNameDiv .auiIconRepeat {background-position: 0px -848px; margin-top: 1px !important;}
+.termScheduleDivNameDiv .auiIconRepeat:hover {background-position: 0px -848px;}
+
+.auiIconSecret {
+  background-position: 0px -736px;
+  width: 12px;
+}
+
+a.auiIconSecret:hover {
+  background-position: 0px -736px;
+}
+.termScheduleDivNameDiv .auiIconSecret {background-position: 0px -864px; margin-top: 1px !important;}
+.termScheduleDivNameDiv .auiIconSecret:hover {background-position: 0px -864px;}
+
+.auiIconTrash {
+  background-position: 0px -752px;
+}
+
+.auiIconTrash_w {
+  background-position: 0px -768px;
+}
+
+a.auiIconTrash:hover {
+  background-position: 0px -768px;
+}
+
+.auiIconMail {
+  background-position: 0px -784px;
+}
+
+a.auiIconMail:hover {
+  background-position: 0px -784px;
+}
+
+.auiIconMailOpen {
+  background-position: 0px -800px;
+}
+
+a.auiIconMailOpen:hover {
+  background-position: 0px -800px;
+}
+
+.auiIconIndicator {
+  background-image: url(../images/common/indicator.gif);
+  background-repeat: no-repeat;
+}
+
+/***************************************************
+	auiIconArrow
+--------------------------------------------------*/
+.auiIconArrow {
+  display: inline-block;
+  width: 15px;
+  height: 18px;
+  vertical-align: baseline;
+  background-image: url(../images/icon/auiIconSprites20150318.png);
+  background-repeat: no-repeat;
+}
+
+.auiIconArrowLeft {
+  background-position: 0 -367px;
+}
+
+.auiIconArrowLeft_w {
+  background-position: 0 -383px;
+}
+
+.auiIconArrowLeftW {
+  background-position: 0 -623px;
+}
+
+.auiIconArrowRight {
+  background-position: 0 -399px;
+}
+
+.auiIconArrowRight_w {
+  background-position: 0 -417px;
+}
+
+.auiIconArrowRightW {
+  background-position: 0 -655px;
+}
+
+.auiIconArrowBottom {
+  background-position: 0 -431px;
+}
+
+.auiIconArrowTop {
+  background-position: 0 -463px;
+}
+
+/***************************************************
+	auiWFicon
+--------------------------------------------------*/
+.auiWFicon,
+.auiWFicon [class^="icon-"] {
+  display: inline-block;
+  text-align: center;
+  height: 16px;
+  width: 16px;
+  line-height: 16px;
+  font-size: 14px;
+  vertical-align: middle;
+  color: #999999;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+a:hover .auiWFicon [class^="icon-"] {
+  color: #333333;
+}
+
+[class^="icon-"] {
+  font-size: 14px;
+  color: #666666;
+  text-decoration: none !important;
+}
+
+/***************************************************
+	loader
+--------------------------------------------------*/
+.loader {
+  padding: 5px;
+  height: 18px;
+  line-height: 18px;
+  background-size: 16px;
+  text-align: center;
+}
+.loader img {
+  vertical-align: middle;
+}
+.loader [class*=icon-] {
+  font-size: 18px;
+}
+
+.auiLoadWrapper {
+  position: relative;
+}
+.auiLoadWrapper .loader {
+  position: absolute;
+  padding: 0;
+  height: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  zoom: 1;
+}
+
+/*IE8Hack*/
+html > body .loader , .auiLoadWrapper.loader{
+  background-color/*\**/: white \9;
+  filter: alpha(opacity=80);
+  -ms-filter: "alpha(opacity=80)";
+}
+
+/* auiAbsLayer ********************/
+.auiAbsLayer {
+  position: absolute;
+  background: #fff;
+  border: solid 1px silver;
+  z-index: 999;
+}
+
+.auiAbsLayer:hover {
+  border: solid 1px #999999;
+}
+
+.relative {
+  position: relative;
+}
+
+/* auiNoData ********************/
+.auiNoData {
+  text-align: center;
+}
+
+/***************************************************
+	CSS3 transition
+--------------------------------------------------*/
+@keyframes fadeIn {
+  0% {
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    opacity: 0;
+  }
+
+  100% {
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    opacity: 0;
+  }
+
+  100% {
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    opacity: 1;
+  }
+}
+
+/***************************************************
+	errorbox
+--------------------------------------------------*/
+.errorbox {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+.errorbox h1 {
+  font-size: 16px;
+  margin: 1em 0;
+}
+.errorbox ul, .errorbox ol {
+  margin: 1em 0 1em 1em;
+}
+.errorbox ol {
+  margin-left: 2em;
+}
+.errorbox li {
+  text-align: left;
+}
+.modalDialog .errorbox {
+  max-width: 100%;
+  padding: 0;
+}
+
+.errorboxContent {
+  border-top: solid 1px #d2d2d2;
+  text-align: left;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+/***************************************************
+	externallink
+--------------------------------------------------*/
+.externallink:after {
+  display: inline-block;
+  font-size: larger;
+  font-family: 'FontAwesome';
+  content: "\f08e";
+  color: #333333;
+  margin-left: 3px;
+}
+
+/***************************************************
+	iframe_messagelist
+--------------------------------------------------*/
+iframe.iframe_messagelist {
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  height: 400px;
+  width: 400px;
+  z-index: 9000;
+  background: white;
+  border-top: 1px solid #d2d2d2;
+  border-left: 1px solid #d2d2d2;
+  border-right: 1px solid #d2d2d2;
+  border-bottom: none;
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  -ms-border-radius: 4px 4px 0 0;
+  -o-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+  overflow: hidden;
+}
+
+/***************************************************
+	guideList
+--------------------------------------------------*/
+.guideList{
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	letter-spacing: -1em;
+	word-spacing: -1em;
+}
+:root .guideList{
+	letter-spacing: -1px;
+	word-spacing: -1px;
+}
+.guideList li{
+	@extend .border-box;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	background: none;
+	width: 24.75%;
+	min-width: 109px;
+	vertical-align: top;
+	letter-spacing: normal;
+	word-spacing: normal;
+}
+.guideList li > a{
+	@extend .bRadius4;
+	display: block;
+	text-align: center;
+	padding: 10px 5px;
+	text-decoration: none;
+}
+.guideList li > a p{
+	text-decoration: underline;
+}
+.guideList li > a:hover{
+	background: $grayHightLight;
+}
+.guideList li > a:hover p{
+	text-decoration: none;
+}
+.guideList i{
+	font-size: 50px;
+}
+.guideList.wide li{
+	width: 100%;
+	padding: 10px 0 0 120px;
+	margin-bottom: 20px;
+	position: relative;
+}
+.guideList.wide .iconBox{
+	position: absolute;
+	display: inline-block;
+	width: 110px;
+	top: 15px;
+	left: 0px;
+	text-align: center;
+}
+.guideList .iconBox i{
+	font-size: 70px;
+}
+
+/***************************************************
+	copyright
+--------------------------------------------------*/
+.copyright {
+  padding: 10px;
+  text-align: right;
+  font-size: 11px;
+  color: #999;
+}
+/***************************************************
+	avatar
+--------------------------------------------------*/
+[class*="avatar"],
+[class*="avatar"] img,
+.auiAvatarList li a img {
+  border-radius: 100% !important;
+}

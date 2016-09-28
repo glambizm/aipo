@@ -1,0 +1,13 @@
+com\aimluck\eip\memo\MemoSelectData.class
+com\aimluck\eip\modules\screens\MemoListScreen.class
+com\aimluck\eip\memo\MemoLiteResultData.class
+com\aimluck\eip\modules\actions\memo\MemoAction.class
+com\aimluck\eip\memo\MemoResultData.class
+com\aimluck\eip\memo\MemoFormData.class
+com\aimluck\eip\modules\screens\MemoScreen.class
+com\aimluck\eip\modules\screens\MemoFormJSONScreen.class
+com\aimluck\eip\modules\parameters\MemoIdListBox.class
+com\aimluck\eip\modules\screens\MemoDetailScreen.class
+com\aimluck\eip\modules\screens\MemoFormScreen.class
+com\aimluck\eip\memo\MemoMultiDelete.class
+com\aimluck\eip\memo\util\MemoUtils.class

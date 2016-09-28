@@ -1,0 +1,1 @@
+dojo.provide("aipo.deletesample");aipo.deletesample.onLoadDeleteSampleDialog=function(a){};

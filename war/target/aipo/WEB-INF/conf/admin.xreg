@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registry>
+    <portlet-entry name="PortletCustomizer" hidden="true" type="instance" application="false">
+        <security-ref parent="user-only"/>
+        <meta-info>
+            <title>カスタマイズアプリ</title>
+        </meta-info>
+        <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
+        <parameter name="template" value="customizer-portlet" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="action" value="portlets.ALCustomizeAction" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="_security_ref" value="" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
+            <security-ref parent="user-only"/>
+            <meta-info>
+                <title>このリソースのためのセキュリティ制限。このリソース外からロックする「管理者のみ」のような制限を与えないように注意してください。</title>
+            </meta-info>
+        </parameter>
+        <parameter name="_security_ref.style" value="RegistryEntryListBox" hidden="false" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="_security_ref.style.registry" value="Security" hidden="false" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="_skin" value="" type="style" hidden="false" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="_skin.style" value="RegistryEntryListBox" hidden="false" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="_skin.style.registry" value="Skin" hidden="false" cachedOnName="true" cachedOnValue="true"/>
+        <url cachedOnURL="true"/>
+        <category group="Jetspeed">管理</category>
+        <category group="Jetspeed">カスタマイズアプリ</category>
+    </portlet-entry>
+    <portlet-entry name="PortletSetCustomizer" hidden="true" type="instance" application="false">
+        <security-ref parent="user-only"/>
+        <meta-info>
+            <title>ページ設定</title>
+        </meta-info>
+        <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
+        <parameter name="template" value="customizer-portletset" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="action" value="portlets.ALCustomizeSetAction" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="securityRef" value="" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
+            <security-ref parent="user-only"/>
+        </parameter>
+        <parameter name="securityRef.style" value="RegistryEntryListBox" hidden="false" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="securityRef.style.registry" value="Security" hidden="false" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="securityRef.style.disabled-if-wml" value="true" hidden="false" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="securityRef.style.javascript:onchange" value="document.securityRefs.submit()" hidden="false" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="skin" value="" type="style" hidden="false" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="skin.style" value="RegistryEntryListBox" hidden="false" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="skin.style.registry" value="Skin" hidden="false" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="skin.style.disabled-if-wml" value="true" hidden="false" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="skin.style.javascript:onchange" value="document.skins.submit()" hidden="false" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="control" value="" type="style" hidden="false" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="control.style" value="RegistryEntryListBox" hidden="false" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="control.style.registry" value="PortletControl" hidden="false" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="control.style.disabled-if-wml" value="true" hidden="false" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="control.style.select-hidden" value="true" hidden="false" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="control.style.select-if-simple" value="true" hidden="false" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="control.style.set-label" value="true" hidden="false" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="control.style.javascript:onchange" value="this.form.submit()" hidden="false" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="addRef" value="" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
+            <security-ref parent="admin-only"/>
+        </parameter>
+        <parameter name="addRef.style" value="VelocityParameterPresentationStyle" hidden="false" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="addRef.style.template" value="Button.vm" hidden="false" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="addRef.style.no-access" value="addRefDisabled" hidden="false" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="addRefDisabled" value="" type="style" hidden="false" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="addRefDisabled.style" value="VelocityParameterPresentationStyle" hidden="false" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="addRefDisabled.style.template" value="Button.vm" hidden="false" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="addRefDisabled.style.disabled" value="true" hidden="false" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="addRefDisabled.style.no-access" value="addRefDisabled" hidden="false" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="size" value="50" hidden="false" cachedOnName="true" cachedOnValue="true"/>
+        <url cachedOnURL="true"/>
+        <category group="Jetspeed">管理</category>
+        <category group="Jetspeed">カスタマイズ</category>
+    </portlet-entry>
+</registry>

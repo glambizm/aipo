@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registry>
+    <portlet-control-entry name="ClearPortletControl" hidden="true">
+        <meta-info>
+            <title>クリアアプリコントロール</title>
+        </meta-info>
+        <classname>com.aimluck.eip.portal.controls.ALVelocityPortletControl</classname>
+        <parameter name="theme" value="clear.vm" hidden="false"/>
+        <parameter name="simple" value="true" hidden="false"/>
+        <media-type ref="docomo_foma"/>
+        <media-type ref="docomo_imode"/>
+        <media-type ref="au"/>
+        <media-type ref="vodafone"/>
+        <media-type ref="wml"/>
+        <media-type ref="html"/>
+        <media-type ref="iphone"/>
+        <media-type ref="wm"/>
+    </portlet-control-entry>
+    <portlet-control-entry name="FullScreenControl" hidden="true">
+        <meta-info>
+            <title>フルスクリーンコントロール</title>
+        </meta-info>
+        <classname>com.aimluck.eip.portal.controls.ALVelocityPortletControl</classname>
+        <parameter name="theme" value="jetspeed.vm" hidden="false"/>
+        <media-type ref="html"/>
+        <media-type ref="wml"/>
+    </portlet-control-entry>
+    <portlet-control-entry name="BoxControl" hidden="true">
+        <meta-info>
+            <title>ボックスタイトルコントロール</title>
+        </meta-info>
+        <classname>com.aimluck.eip.portal.controls.ALVelocityPortletControl</classname>
+        <parameter name="theme" value="jetspeed-box.vm" hidden="false"/>
+        <parameter name="thickness" value="2" hidden="false"/>
+        <parameter name="simple" value="true" hidden="false"/>
+        <media-type ref="html"/>
+    </portlet-control-entry>
+    <portlet-control-entry name="TitlePortletControl" hidden="false">
+        <meta-info>
+            <title>シンプルタイトルコントロール</title>
+        </meta-info>
+        <classname>com.aimluck.eip.portal.controls.ALVelocityPortletControl</classname>
+        <parameter name="theme" value="jetspeed.vm" hidden="false"/>
+        <parameter name="simple" value="true" hidden="false"/>
+        <media-type ref="html"/>
+        <media-type ref="wml"/>
+    </portlet-control-entry>
+    <portlet-control-entry name="PanedPortletControl" hidden="true">
+        <meta-info>
+            <title>区画化アプリコントロール</title>
+        </meta-info>
+        <classname>com.aimluck.eip.portal.controls.ALVelocityPortletSetControl</classname>
+        <parameter name="theme" value="jetspeed-tab.vm" hidden="false"/>
+        <media-type ref="html"/>
+    </portlet-control-entry>
+    <portlet-control-entry name="TabControl" hidden="false">
+        <meta-info>
+            <title>タブコントロール</title>
+        </meta-info>
+        <classname>com.aimluck.eip.portal.controls.ALVelocityPortletSetControl</classname>
+        <parameter name="theme" value="jetspeed-tab.vm" hidden="false"/>
+        <media-type ref="html"/>
+    </portlet-control-entry>
+    <portlet-control-entry name="MenuControl" hidden="false">
+        <meta-info>
+            <title>左メニューコントロール</title>
+        </meta-info>
+        <classname>com.aimluck.eip.portal.controls.ALVelocityPortletSetControl</classname>
+        <parameter name="tab-width" value="25%" hidden="false"/>
+        <parameter name="theme" value="jetspeed-menu.vm" hidden="false"/>
+        <media-type ref="html"/>
+    </portlet-control-entry>
+</registry>

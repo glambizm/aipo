@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <copy todir="../war/target/aipo/WEB-INF/lib" overwrite="true" verbose="false">
+    <fileset includes="*-8.1.1.jar" dir="./target"/>
+  </copy>
+</target>
+</project>

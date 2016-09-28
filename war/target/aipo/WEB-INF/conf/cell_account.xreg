@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registry>
+    <portlet-entry name="Cell_AccountLogin" hidden="true" type="ref" parent="Velocity" application="false">
+        <meta-info>
+            <title>ログイン</title>
+            <description>ログインします。</description>
+        </meta-info>
+        <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
+        <parameter name="template" value="accountlogin-form" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="action" value="account.CellAccountLoginAction" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="_showtitlebar" value="false" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <media-type ref="docomo_foma"/>
+        <media-type ref="docomo_imode"/>
+        <media-type ref="iphone"/>
+        <media-type ref="au"/>
+        <media-type ref="vodafone"/>
+        <media-type ref="wm"/>
+        <url cachedOnURL="true"/>
+    </portlet-entry>
+    <portlet-entry name="Cell_AccountEdit" hidden="true" type="ref" parent="Velocity" application="false">
+        <meta-info>
+            <title>簡易ﾛｸﾞｲﾝ設定</title>
+            <description>ユーザー情報を管理します。</description>
+        </meta-info>
+        <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
+        <parameter name="template" value="accountlogin-form" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="action" value="account.CellAccountEditAction" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="_showtitlebar" value="false" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <media-type ref="docomo_foma"/>
+        <media-type ref="docomo_imode"/>
+        <media-type ref="au"/>
+        <media-type ref="vodafone"/>
+        <url cachedOnURL="true"/>
+    </portlet-entry>
+    <portlet-entry name="Cell_AccountPerson" hidden="true" type="ref" parent="Velocity" application="false">
+        <meta-info>
+            <title>個人設定</title>
+            <description>ユーザー情報を管理します。</description>
+        </meta-info>
+        <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
+        <parameter name="template" value="account" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="action" value="account.AccountPersonAction" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="_showtitlebar" value="false" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <media-type ref="iphone"/>
+        <media-type ref="wm"/>
+        <url cachedOnURL="true"/>
+    </portlet-entry>
+</registry>

@@ -1,0 +1,10 @@
+com\aimluck\eip\mygroup\MyGroupSelectData.class
+com\aimluck\eip\modules\actions\mygroup\MyGroupAction.class
+com\aimluck\eip\modules\screens\MyGroupDetailScreen.class
+com\aimluck\eip\modules\screens\MyGroupFormJSONScreen.class
+com\aimluck\eip\modules\screens\MyGroupListScreen.class
+com\aimluck\eip\mygroup\MyGroupFormData.class
+com\aimluck\eip\mygroup\MyGroupResultData.class
+com\aimluck\eip\mygroup\util\MyGroupUtils.class
+com\aimluck\eip\modules\screens\MyGroupFormScreen.class
+com\aimluck\eip\modules\screens\MyGroupScreen.class

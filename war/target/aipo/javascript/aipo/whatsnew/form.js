@@ -1,0 +1,1 @@
+dojo.provide("aipo.whatsnew");aipo.whatsnew.onLoadWhatsnewDialog=function(a){var b=dojo.byId("whatsnew_name");if(b){b.focus()}aipo.portletReload("whatsnew")};

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registry>
+    <portlet-entry name="WhatsNew" hidden="true" type="ref" parent="Velocity" application="false">
+        <security-ref parent="user-view"/>
+        <meta-info>
+            <title>新着情報</title>
+            <description>新着情報を管理します。</description>
+        </meta-info>
+        <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
+        <parameter name="template" value="whatsnew" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1a-span" value="3" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
+            <meta-info>
+                <title>新着情報保持期間</title>
+            </meta-info>
+        </parameter>
+        <parameter name="p1a-span.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1a-span.style.items" value="1,3,7,31" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1a-span.style.values" value="１日,３日間,１週間,１ヶ月" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p2a-rows" value="5" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
+            <meta-info>
+                <title>新着情報 保持件数</title>
+            </meta-info>
+        </parameter>
+        <parameter name="p2a-rows.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p2a-rows.style.items" value="5,10,20,50,100" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p2a-rows.style.values" value="５件,１０件,２０件,５０件,１００件" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="action" value="whatsnew.WhatsNewAction" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <media-type ref="html"/>
+        <url cachedOnURL="true"/>
+    </portlet-entry>
+</registry>

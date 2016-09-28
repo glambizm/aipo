@@ -1,0 +1,1 @@
+({"previousMessage": "Opciones anteriores", "nextMessage": "M叩s opciones"})

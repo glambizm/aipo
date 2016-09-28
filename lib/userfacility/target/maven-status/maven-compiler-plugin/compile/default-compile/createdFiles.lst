@@ -1,0 +1,7 @@
+com\aimluck\eip\userfacility\util\UserFacilityUtils.class
+com\aimluck\eip\modules\screens\UserFacilityLiteJSONScreen.class
+com\aimluck\eip\userfacility\util\UserAllUtils.class
+com\aimluck\eip\userfacility\beans\UserAllLiteBean.class
+com\aimluck\eip\userfacility\beans\UserFacilityLiteBean.class
+com\aimluck\eip\userfacility\beans\UserAllLiteBean$Type.class
+com\aimluck\eip\modules\screens\UserAllLiteJSONScreen.class

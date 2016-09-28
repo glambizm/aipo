@@ -1,0 +1,161 @@
+#*
+ * Aipo is a groupware program developed by TOWN, Inc.
+ * Copyright (C) 2004-2015 TOWN, Inc.
+ * http://www.aipo.com
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *#
+## ---------------------------------------------------------------------------
+<tr>
+  <td>
+    <table class="tableWrapper">
+      <tbody>
+        <tr>
+#set ($ndx = 0)
+#set ($col = 0)
+#set ($timelineCount = 0)
+
+#foreach ( $column in $portlets )
+#foreach ( $portlet in $column )
+#if($portlet.parent == "Timeline")
+#set ($timelineCount = $timelineCount + 1)
+#end
+#end
+#end
+
+#foreach ( $column in $portlets )
+#set ($row = 0)
+#if  ($sizes.size() >= $velocityCount)
+#set ($idx = $velocityCount - 1 )
+#set ($width = $!sizes.elementAt($idx))
+#end
+          <td class="top" width="$width">
+            <table class="tableWrapper">
+              <tbody>
+#foreach ( $portlet in $column )
+                <tr>
+                  <td class="wide">
+                    <form action="#ALpsmlLink($jslink.Template $!{js_peid})" method="post">
+#if ($action)
+                      <input type="hidden" name="$jslink.ActionKey" value="$action" />
+#end
+                      <input type="hidden" name="id" value="$portlet.id"/>
+                      <input type="hidden" name="col" value="$col"/>
+                      <input type="hidden" name="row" value="$row"/>
+					  <input type="hidden" name="secid" value="$secid" />
+                      <div class="auiPortlet">
+                        <div class="auiPortletHead">
+                            <div class="inner ">
+                                <div class="auiPortletTitle">$!utils.escapeXML($titles.get($portlet.id))</div>
+								<div class="auiPortletTool">
+#if($accessControl == "true" && ($portlet.parent != "Timeline" || ($timelineCount > 1)))
+									<div class="auiPortletDelete">
+										<a href="javascript:(function(e){ document.getElementById('remove_button_$portlet.id').click()})();" class="auiIcon"><i class="icon-remove"></i></a>
+										<button  type="submit" id="remove_button_$portlet.id" style="display:none" name="eventSubmit_doDelete"/>&nbsp;<i class="icon-remove"></i>&nbsp;</button>
+									</div>
+#end
+								</div>
+							</div>
+						</div>
+						<div class="auiPortletBody">
+							<div class="inner">
+								<table width="100%" cellspacing="0" cellpadding="0">
+								 <tbody>
+								  <tr>
+								   <td nowrap="nowrap" class="middle center">
+								   <table style="margin:0 auto;"><tbody>
+								    <tr>
+								     <td>&nbsp;</td>
+								     <td>
+#if ($row == 0)
+								     	#AUIDisableArrowbutton('icon-arrow-up')
+#else
+								     	#AUIArrowbutton('eventSubmit_doUp' 'icon-arrow-up')
+#end
+								     </td>
+								     <td>&nbsp;</td>
+								    </tr>
+								    <tr>
+								     <td>
+#if ($col == 0)
+								     	#AUIDisableArrowbutton('icon-arrow-left')
+#else
+								     	#AUIArrowbutton('eventSubmit_doLeft' 'icon-arrow-left')
+#end
+								     </td>
+								     <td>&nbsp;</td>
+								     <td>
+#if ($col == ($sizes.size() - 1))
+								     	#AUIDisableArrowbutton('icon-arrow-right')
+#else
+								     	#AUIArrowbutton('eventSubmit_doRight' 'icon-arrow-right')
+#end
+								     </td>
+								    </tr>
+								    <tr>
+								     <td>&nbsp;</td>
+								     <td>
+#if ($row == ($column.size() - 1))
+								     	#AUIDisableArrowbutton('icon-arrow-down')
+#else
+								     	#AUIArrowbutton('eventSubmit_doDown' 'icon-arrow-down')
+#end
+								     </td>
+								     <td>&nbsp;</td>
+								    </tr>
+								    </tbody></table>
+								   </td>
+								  </tr>
+								 </tbody>
+								</table>
+							</div>
+						</div>
+						<!-- /auiPortletBody -->
+						<div class="auiPortletFoot">
+							<div class="inner"></div>
+						</div>
+					  </div>
+                      <!-- /PORTLET OUTER -->
+                    </form>
+                  </td>
+                </tr>
+#set ($row = $row + 1)
+#end
+              </tbody>
+            </table>
+          </td>
+#set ($col = $col + 1)
+#if ("$col" != $colNum)
+          <td class="top" width="2"></td>
+#end
+#end
+        </tr>
+      </tbody>
+    </table>
+  </td>
+</tr>
+<tr>
+  <td>
+    <form action="#ALpsmlLink($jslink.Template $!{js_peid})" method="post" onsubmit="return(aimluck.io.disableForm(this, true));">
+#if ($action)
+      <input type="hidden" name="$jslink.ActionKey" value="$action"/>
+#end
+#ALbuttonheader()
+#if ($controller.Portlets.allowCustomize($data))
+#ALsubmit('eventSubmit_doSave' $l10n.TODO_UPDATE)#ALsubmitCancel('eventSubmit_doCancel' $l10n.ACCOUNT_CANCEL)
+#end
+#ALbuttonfooter()
+     </form>
+  </td>
+</tr>

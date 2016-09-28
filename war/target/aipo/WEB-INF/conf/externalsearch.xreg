@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registry>
+    <portlet-entry name="ExternalSearch" hidden="true" type="ref" parent="Velocity" application="false">
+        <security-ref parent="user-view"/>
+        <meta-info>
+            <title>検索窓</title>
+            <description>検索窓を管理します。</description>
+        </meta-info>
+        <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
+        <parameter name="template" value="externalsearch" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1a-selects" value="yahoo" type="style" hidden="false" cachedOnName="true" cachedOnValue="true">
+            <meta-info>
+                <title>初期選択検索エンジン</title>
+            </meta-info>
+        </parameter>
+        <parameter name="p1a-selects.style" value="ListBox" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1a-selects.style.items" value="yahoo,google,tabi" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="p1a-selects.style.values" value="Yahoo!,Google,旅侍" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <parameter name="action" value="externalsearch.ExternalSearchAction" hidden="true" cachedOnName="true" cachedOnValue="true"/>
+        <media-type ref="html"/>
+        <url cachedOnURL="true"/>
+    </portlet-entry>
+</registry>

@@ -1,0 +1,7 @@
+com\aimluck\eip\modules\screens\CommonCategoryLiteJSONScreen.class
+com\aimluck\eip\category\CommonCategoryMultiDelete.class
+com\aimluck\eip\category\beans\CommonCategoryLiteBean.class
+com\aimluck\eip\category\CommonCategoryFormData.class
+com\aimluck\eip\category\CommonCategorySelectData.class
+com\aimluck\eip\category\util\CommonCategoryUtils.class
+com\aimluck\eip\category\CommonCategoryResultData.class

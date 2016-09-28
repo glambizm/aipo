@@ -1,0 +1,5 @@
+com\aimluck\eip\facility\util\FacilityUtils.class
+com\aimluck\eip\modules\screens\FacilityGroupLiteJSONScreen.class
+com\aimluck\eip\modules\screens\FacilityLiteJSONScreen.class
+com\aimluck\eip\facility\beans\FacilityGroupLiteBean.class
+com\aimluck\eip\facility\beans\FacilityLiteBean.class

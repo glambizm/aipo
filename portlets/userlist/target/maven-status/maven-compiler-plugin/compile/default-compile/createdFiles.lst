@@ -1,0 +1,7 @@
+com\aimluck\eip\modules\screens\UserDetailScreen.class
+com\aimluck\eip\modules\screens\UserListScreen.class
+com\aimluck\eip\userlist\utils\UserListUtils.class
+com\aimluck\eip\modules\actions\userlist\UserListAction.class
+com\aimluck\eip\userlist\UserSelectData.class
+com\aimluck\eip\modules\screens\UserPopupScreen.class
+com\aimluck\eip\modules\screens\UserListListScreen.class
